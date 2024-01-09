@@ -31,6 +31,7 @@ contract Addresses {
 	EchidnaPrimitiveManager manager = manager_18_18;
 	EchidnaMockEngine engine = engine_18_18;
 
+    constructor() {}
 
 	mapping (address => bytes32[]) createdPoolIds;
 	bytes32[] poolIds;

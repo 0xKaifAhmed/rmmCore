@@ -1,0 +1,3446 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220036f626ce495aea80d4115eb050b1f257b204b757ba114660940480afe712e3764736f6c63430008060033",
+    "sourceMap": "207:5066:28:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;207:5066:28;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220036f626ce495aea80d4115eb050b1f257b204b757ba114660940480afe712e3764736f6c63430008060033",
+    "sourceMap": "207:5066:28:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Primitive\",\"details\":\"Data structure library for an Engine's Reserves\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Reserves Library\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/Reserve.sol\":\"Reserve\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/libraries/Reserve.sol\":{\"keccak256\":\"0x5ff07d4f9dc34770b99fd84ae4586b162d9a2730bc973d17ffe48b52165a87c9\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://e2058eddfc544888af4f7966391262df12a4d516c960a75a6ed1a95bfb6a40e4\",\"dweb:/ipfs/QmWKD8Y4YmEEaJYc9AUnb3j8iLT62XHpGhLSzbNar9BB9d\"]},\"contracts/libraries/SafeCast.sol\":{\"keccak256\":\"0xaf262b2cd8a8f60a75aa8e448a0e1975c9b0c909fa0286eab477a4f7f04b4f73\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://74ccabbebc05c33fa395505e6d2ddc481e6d3e50abac53df23a3bac5582aa4d2\",\"dweb:/ipfs/QmPptwoz1MFxSd8RxY9vX4fLUBHKiTHH9RUZds7QfHdGH9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/libraries/Reserve.sol": "Reserve"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/libraries/Reserve.sol": {
+        "keccak256": "0x5ff07d4f9dc34770b99fd84ae4586b162d9a2730bc973d17ffe48b52165a87c9",
+        "urls": [
+          "bzz-raw://e2058eddfc544888af4f7966391262df12a4d516c960a75a6ed1a95bfb6a40e4",
+          "dweb:/ipfs/QmWKD8Y4YmEEaJYc9AUnb3j8iLT62XHpGhLSzbNar9BB9d"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "contracts/libraries/SafeCast.sol": {
+        "keccak256": "0xaf262b2cd8a8f60a75aa8e448a0e1975c9b0c909fa0286eab477a4f7f04b4f73",
+        "urls": [
+          "bzz-raw://74ccabbebc05c33fa395505e6d2ddc481e6d3e50abac53df23a3bac5582aa4d2",
+          "dweb:/ipfs/QmPptwoz1MFxSd8RxY9vX4fLUBHKiTHH9RUZds7QfHdGH9"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/libraries/Reserve.sol",
+    "id": 19304,
+    "exportedSymbols": {
+      "Reserve": [
+        19303
+      ],
+      "SafeCast": [
+        19333
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:5233:28",
+    "nodes": [
+      {
+        "id": 19022,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 19023,
+        "nodeType": "ImportDirective",
+        "src": "67:24:28",
+        "nodes": [],
+        "absolutePath": "contracts/libraries/SafeCast.sol",
+        "file": "./SafeCast.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 19304,
+        "sourceUnit": 19334,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 19303,
+        "nodeType": "ContractDefinition",
+        "src": "207:5066:28",
+        "nodes": [
+          {
+            "id": 19027,
+            "nodeType": "UsingForDirective",
+            "src": "229:27:28",
+            "nodes": [],
+            "libraryName": {
+              "id": 19025,
+              "name": "SafeCast",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 19333,
+              "src": "235:8:28"
+            },
+            "typeName": {
+              "id": 19026,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "248:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "id": 19042,
+            "nodeType": "StructDefinition",
+            "src": "773:242:28",
+            "nodes": [],
+            "canonicalName": "Reserve.Data",
+            "members": [
+              {
+                "constant": false,
+                "id": 19029,
+                "mutability": "mutable",
+                "name": "reserveRisky",
+                "nameLocation": "803:12:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "795:20:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 19028,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "795:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19031,
+                "mutability": "mutable",
+                "name": "reserveStable",
+                "nameLocation": "833:13:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "825:21:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 19030,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "825:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19033,
+                "mutability": "mutable",
+                "name": "liquidity",
+                "nameLocation": "864:9:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "856:17:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 19032,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "856:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19035,
+                "mutability": "mutable",
+                "name": "blockTimestamp",
+                "nameLocation": "890:14:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "883:21:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 19034,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "883:6:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19037,
+                "mutability": "mutable",
+                "name": "cumulativeRisky",
+                "nameLocation": "922:15:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "914:23:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19036,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "914:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19039,
+                "mutability": "mutable",
+                "name": "cumulativeStable",
+                "nameLocation": "955:16:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "947:24:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19038,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "947:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19041,
+                "mutability": "mutable",
+                "name": "cumulativeLiquidity",
+                "nameLocation": "989:19:28",
+                "nodeType": "VariableDeclaration",
+                "scope": 19042,
+                "src": "981:27:28",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19040,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "981:7:28",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Data",
+            "nameLocation": "780:4:28",
+            "scope": 19303,
+            "visibility": "public"
+          },
+          {
+            "id": 19107,
+            "nodeType": "FunctionDefinition",
+            "src": "1283:532:28",
+            "nodes": [],
+            "body": {
+              "id": 19106,
+              "nodeType": "Block",
+              "src": "1349:466:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    19052
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 19052,
+                      "mutability": "mutable",
+                      "name": "deltaTime",
+                      "nameLocation": "1366:9:28",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 19106,
+                      "src": "1359:16:28",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      },
+                      "typeName": {
+                        "id": 19051,
+                        "name": "uint32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1359:6:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 19057,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    },
+                    "id": 19056,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 19053,
+                      "name": "blockTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19048,
+                      "src": "1378:14:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 19054,
+                        "name": "res",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19046,
+                        "src": "1395:3:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19055,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "blockTimestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19035,
+                      "src": "1395:18:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "src": "1378:35:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1359:54:28"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    },
+                    "id": 19060,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 19058,
+                      "name": "deltaTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19052,
+                      "src": "1458:9:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 19059,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1471:1:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1458:14:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 19105,
+                  "nodeType": "IfStatement",
+                  "src": "1454:355:28",
+                  "trueBody": {
+                    "id": 19104,
+                    "nodeType": "Block",
+                    "src": "1474:335:28",
+                    "statements": [
+                      {
+                        "id": 19097,
+                        "nodeType": "UncheckedBlock",
+                        "src": "1488:262:28",
+                        "statements": [
+                          {
+                            "expression": {
+                              "id": 19071,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftHandSide": {
+                                "expression": {
+                                  "id": 19061,
+                                  "name": "res",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19046,
+                                  "src": "1516:3:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                    "typeString": "struct Reserve.Data storage pointer"
+                                  }
+                                },
+                                "id": 19063,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": true,
+                                "memberName": "cumulativeRisky",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 19037,
+                                "src": "1516:19:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "Assignment",
+                              "operator": "+=",
+                              "rightHandSide": {
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 19070,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "arguments": [
+                                    {
+                                      "expression": {
+                                        "id": 19066,
+                                        "name": "res",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 19046,
+                                        "src": "1547:3:28",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                          "typeString": "struct Reserve.Data storage pointer"
+                                        }
+                                      },
+                                      "id": 19067,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberName": "reserveRisky",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 19029,
+                                      "src": "1547:16:28",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    ],
+                                    "id": 19065,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "1539:7:28",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_uint256_$",
+                                      "typeString": "type(uint256)"
+                                    },
+                                    "typeName": {
+                                      "id": 19064,
+                                      "name": "uint256",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "1539:7:28",
+                                      "typeDescriptions": {}
+                                    }
+                                  },
+                                  "id": 19068,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "typeConversion",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1539:25:28",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "*",
+                                "rightExpression": {
+                                  "id": 19069,
+                                  "name": "deltaTime",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19052,
+                                  "src": "1567:9:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                },
+                                "src": "1539:37:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "1516:60:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 19072,
+                            "nodeType": "ExpressionStatement",
+                            "src": "1516:60:28"
+                          },
+                          {
+                            "expression": {
+                              "id": 19083,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftHandSide": {
+                                "expression": {
+                                  "id": 19073,
+                                  "name": "res",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19046,
+                                  "src": "1594:3:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                    "typeString": "struct Reserve.Data storage pointer"
+                                  }
+                                },
+                                "id": 19075,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": true,
+                                "memberName": "cumulativeStable",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 19039,
+                                "src": "1594:20:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "Assignment",
+                              "operator": "+=",
+                              "rightHandSide": {
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 19082,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "arguments": [
+                                    {
+                                      "expression": {
+                                        "id": 19078,
+                                        "name": "res",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 19046,
+                                        "src": "1626:3:28",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                          "typeString": "struct Reserve.Data storage pointer"
+                                        }
+                                      },
+                                      "id": 19079,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberName": "reserveStable",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 19031,
+                                      "src": "1626:17:28",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    ],
+                                    "id": 19077,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "1618:7:28",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_uint256_$",
+                                      "typeString": "type(uint256)"
+                                    },
+                                    "typeName": {
+                                      "id": 19076,
+                                      "name": "uint256",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "1618:7:28",
+                                      "typeDescriptions": {}
+                                    }
+                                  },
+                                  "id": 19080,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "typeConversion",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1618:26:28",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "*",
+                                "rightExpression": {
+                                  "id": 19081,
+                                  "name": "deltaTime",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19052,
+                                  "src": "1647:9:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                },
+                                "src": "1618:38:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "1594:62:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 19084,
+                            "nodeType": "ExpressionStatement",
+                            "src": "1594:62:28"
+                          },
+                          {
+                            "expression": {
+                              "id": 19095,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftHandSide": {
+                                "expression": {
+                                  "id": 19085,
+                                  "name": "res",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19046,
+                                  "src": "1674:3:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                    "typeString": "struct Reserve.Data storage pointer"
+                                  }
+                                },
+                                "id": 19087,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": true,
+                                "memberName": "cumulativeLiquidity",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 19041,
+                                "src": "1674:23:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "Assignment",
+                              "operator": "+=",
+                              "rightHandSide": {
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 19094,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "arguments": [
+                                    {
+                                      "expression": {
+                                        "id": 19090,
+                                        "name": "res",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 19046,
+                                        "src": "1709:3:28",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                          "typeString": "struct Reserve.Data storage pointer"
+                                        }
+                                      },
+                                      "id": 19091,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberName": "liquidity",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 19033,
+                                      "src": "1709:13:28",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                      }
+                                    ],
+                                    "id": 19089,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "1701:7:28",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_uint256_$",
+                                      "typeString": "type(uint256)"
+                                    },
+                                    "typeName": {
+                                      "id": 19088,
+                                      "name": "uint256",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "1701:7:28",
+                                      "typeDescriptions": {}
+                                    }
+                                  },
+                                  "id": 19092,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "typeConversion",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "1701:22:28",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "*",
+                                "rightExpression": {
+                                  "id": 19093,
+                                  "name": "deltaTime",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 19052,
+                                  "src": "1726:9:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                },
+                                "src": "1701:34:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "1674:61:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "id": 19096,
+                            "nodeType": "ExpressionStatement",
+                            "src": "1674:61:28"
+                          }
+                        ]
+                      },
+                      {
+                        "expression": {
+                          "id": 19102,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 19098,
+                              "name": "res",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19046,
+                              "src": "1763:3:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                "typeString": "struct Reserve.Data storage pointer"
+                              }
+                            },
+                            "id": 19100,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "blockTimestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 19035,
+                            "src": "1763:18:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 19101,
+                            "name": "blockTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 19048,
+                            "src": "1784:14:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          "src": "1763:35:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "id": 19103,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1763:35:28"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 19043,
+              "nodeType": "StructuredDocumentation",
+              "src": "1021:257:28",
+              "text": "@notice                 Adds to the cumulative reserves\n @dev                    Overflow is desired on the cumulative values\n @param  res             Reserve storage to update\n @param  blockTimestamp  Checkpoint timestamp of update"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update",
+            "nameLocation": "1292:6:28",
+            "parameters": {
+              "id": 19049,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19046,
+                  "mutability": "mutable",
+                  "name": "res",
+                  "nameLocation": "1312:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19107,
+                  "src": "1299:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                    "typeString": "struct Reserve.Data"
+                  },
+                  "typeName": {
+                    "id": 19045,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19044,
+                      "name": "Data",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19042,
+                      "src": "1299:4:28"
+                    },
+                    "referencedDeclaration": 19042,
+                    "src": "1299:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                      "typeString": "struct Reserve.Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19048,
+                  "mutability": "mutable",
+                  "name": "blockTimestamp",
+                  "nameLocation": "1324:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19107,
+                  "src": "1317:21:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 19047,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1317:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1298:41:28"
+            },
+            "returnParameters": {
+              "id": 19050,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1349:0:28"
+            },
+            "scope": 19303,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 19164,
+            "nodeType": "FunctionDefinition",
+            "src": "2258:507:28",
+            "nodes": [],
+            "body": {
+              "id": 19163,
+              "nodeType": "Block",
+              "src": "2428:337:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 19123,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19111,
+                        "src": "2445:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      {
+                        "id": 19124,
+                        "name": "blockTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19119,
+                        "src": "2454:14:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      ],
+                      "id": 19122,
+                      "name": "update",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19107,
+                      "src": "2438:6:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Data_$19042_storage_ptr_$_t_uint32_$returns$__$",
+                        "typeString": "function (struct Reserve.Data storage pointer,uint32)"
+                      }
+                    },
+                    "id": 19125,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2438:31:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 19126,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2438:31:28"
+                },
+                {
+                  "condition": {
+                    "id": 19127,
+                    "name": "riskyForStable",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 19113,
+                    "src": "2483:14:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 19161,
+                    "nodeType": "Block",
+                    "src": "2632:127:28",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 19151,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 19145,
+                              "name": "reserve",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19111,
+                              "src": "2646:7:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                "typeString": "struct Reserve.Data storage pointer"
+                              }
+                            },
+                            "id": 19147,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "reserveRisky",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 19029,
+                            "src": "2646:20:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "-=",
+                          "rightHandSide": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 19148,
+                                "name": "deltaOut",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 19117,
+                                "src": "2670:8:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 19149,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "toUint128",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 19332,
+                              "src": "2670:18:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256) pure returns (uint128)"
+                              }
+                            },
+                            "id": 19150,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2670:20:28",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "src": "2646:44:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint128",
+                            "typeString": "uint128"
+                          }
+                        },
+                        "id": 19152,
+                        "nodeType": "ExpressionStatement",
+                        "src": "2646:44:28"
+                      },
+                      {
+                        "expression": {
+                          "id": 19159,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 19153,
+                              "name": "reserve",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19111,
+                              "src": "2704:7:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                "typeString": "struct Reserve.Data storage pointer"
+                              }
+                            },
+                            "id": 19155,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "reserveStable",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 19031,
+                            "src": "2704:21:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "+=",
+                          "rightHandSide": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 19156,
+                                "name": "deltaIn",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 19115,
+                                "src": "2729:7:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 19157,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "toUint128",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 19332,
+                              "src": "2729:17:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256) pure returns (uint128)"
+                              }
+                            },
+                            "id": 19158,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2729:19:28",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "src": "2704:44:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint128",
+                            "typeString": "uint128"
+                          }
+                        },
+                        "id": 19160,
+                        "nodeType": "ExpressionStatement",
+                        "src": "2704:44:28"
+                      }
+                    ]
+                  },
+                  "id": 19162,
+                  "nodeType": "IfStatement",
+                  "src": "2479:280:28",
+                  "trueBody": {
+                    "id": 19144,
+                    "nodeType": "Block",
+                    "src": "2499:127:28",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 19134,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 19128,
+                              "name": "reserve",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19111,
+                              "src": "2513:7:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                "typeString": "struct Reserve.Data storage pointer"
+                              }
+                            },
+                            "id": 19130,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "reserveRisky",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 19029,
+                            "src": "2513:20:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "+=",
+                          "rightHandSide": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 19131,
+                                "name": "deltaIn",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 19115,
+                                "src": "2537:7:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 19132,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "toUint128",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 19332,
+                              "src": "2537:17:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256) pure returns (uint128)"
+                              }
+                            },
+                            "id": 19133,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2537:19:28",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "src": "2513:43:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint128",
+                            "typeString": "uint128"
+                          }
+                        },
+                        "id": 19135,
+                        "nodeType": "ExpressionStatement",
+                        "src": "2513:43:28"
+                      },
+                      {
+                        "expression": {
+                          "id": 19142,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 19136,
+                              "name": "reserve",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19111,
+                              "src": "2570:7:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                                "typeString": "struct Reserve.Data storage pointer"
+                              }
+                            },
+                            "id": 19138,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "reserveStable",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 19031,
+                            "src": "2570:21:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "-=",
+                          "rightHandSide": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 19139,
+                                "name": "deltaOut",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 19117,
+                                "src": "2595:8:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 19140,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "toUint128",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 19332,
+                              "src": "2595:18:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                                "typeString": "function (uint256) pure returns (uint128)"
+                              }
+                            },
+                            "id": 19141,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2595:20:28",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "src": "2570:45:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint128",
+                            "typeString": "uint128"
+                          }
+                        },
+                        "id": 19143,
+                        "nodeType": "ExpressionStatement",
+                        "src": "2570:45:28"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 19108,
+              "nodeType": "StructuredDocumentation",
+              "src": "1821:432:28",
+              "text": "@notice                 Increases one reserve value and decreases the other\n @param  reserve         Reserve state to update\n @param  riskyForStable  Direction of swap\n @param  deltaIn         Amount of tokens paid, increases one reserve by\n @param  deltaOut        Amount of tokens sent out, decreases the other reserve by\n @param  blockTimestamp  Timestamp used to update cumulative reserves"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "2267:4:28",
+            "parameters": {
+              "id": 19120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19111,
+                  "mutability": "mutable",
+                  "name": "reserve",
+                  "nameLocation": "2294:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19164,
+                  "src": "2281:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                    "typeString": "struct Reserve.Data"
+                  },
+                  "typeName": {
+                    "id": 19110,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19109,
+                      "name": "Data",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19042,
+                      "src": "2281:4:28"
+                    },
+                    "referencedDeclaration": 19042,
+                    "src": "2281:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                      "typeString": "struct Reserve.Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19113,
+                  "mutability": "mutable",
+                  "name": "riskyForStable",
+                  "nameLocation": "2316:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19164,
+                  "src": "2311:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19112,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2311:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19115,
+                  "mutability": "mutable",
+                  "name": "deltaIn",
+                  "nameLocation": "2348:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19164,
+                  "src": "2340:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19114,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2340:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19117,
+                  "mutability": "mutable",
+                  "name": "deltaOut",
+                  "nameLocation": "2373:8:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19164,
+                  "src": "2365:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19116,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2365:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19119,
+                  "mutability": "mutable",
+                  "name": "blockTimestamp",
+                  "nameLocation": "2398:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19164,
+                  "src": "2391:21:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 19118,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2391:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2271:147:28"
+            },
+            "returnParameters": {
+              "id": 19121,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2428:0:28"
+            },
+            "scope": 19303,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 19209,
+            "nodeType": "FunctionDefinition",
+            "src": "3233:390:28",
+            "nodes": [],
+            "body": {
+              "id": 19208,
+              "nodeType": "Block",
+              "src": "3410:213:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 19180,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19168,
+                        "src": "3427:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      {
+                        "id": 19181,
+                        "name": "blockTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19176,
+                        "src": "3436:14:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      ],
+                      "id": 19179,
+                      "name": "update",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19107,
+                      "src": "3420:6:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Data_$19042_storage_ptr_$_t_uint32_$returns$__$",
+                        "typeString": "function (struct Reserve.Data storage pointer,uint32)"
+                      }
+                    },
+                    "id": 19182,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3420:31:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 19183,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3420:31:28"
+                },
+                {
+                  "expression": {
+                    "id": 19190,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19184,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19168,
+                        "src": "3461:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19186,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "reserveRisky",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19029,
+                      "src": "3461:20:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19187,
+                          "name": "delRisky",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19170,
+                          "src": "3485:8:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19188,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "3485:18:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19189,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3485:20:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "3461:44:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19191,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3461:44:28"
+                },
+                {
+                  "expression": {
+                    "id": 19198,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19192,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19168,
+                        "src": "3515:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19194,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "reserveStable",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19031,
+                      "src": "3515:21:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19195,
+                          "name": "delStable",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19172,
+                          "src": "3540:9:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19196,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "3540:19:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19197,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3540:21:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "3515:46:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19199,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3515:46:28"
+                },
+                {
+                  "expression": {
+                    "id": 19206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19200,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19168,
+                        "src": "3571:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19202,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "liquidity",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19033,
+                      "src": "3571:17:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19203,
+                          "name": "delLiquidity",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19174,
+                          "src": "3592:12:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19204,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "3592:22:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19205,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3592:24:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "3571:45:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19207,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3571:45:28"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 19165,
+              "nodeType": "StructuredDocumentation",
+              "src": "2771:457:28",
+              "text": "@notice                 Add to both reserves and total supply of liquidity\n @param  reserve         Reserve storage to manipulate\n @param  delRisky        Amount of risky tokens to add to the reserve\n @param  delStable       Amount of stable tokens to add to the reserve\n @param  delLiquidity    Amount of liquidity created with the provided tokens\n @param  blockTimestamp  Timestamp used to update cumulative reserves"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nameLocation": "3242:8:28",
+            "parameters": {
+              "id": 19177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19168,
+                  "mutability": "mutable",
+                  "name": "reserve",
+                  "nameLocation": "3273:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19209,
+                  "src": "3260:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                    "typeString": "struct Reserve.Data"
+                  },
+                  "typeName": {
+                    "id": 19167,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19166,
+                      "name": "Data",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19042,
+                      "src": "3260:4:28"
+                    },
+                    "referencedDeclaration": 19042,
+                    "src": "3260:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                      "typeString": "struct Reserve.Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19170,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "3298:8:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19209,
+                  "src": "3290:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19169,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3290:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19172,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "3324:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19209,
+                  "src": "3316:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19171,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3316:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19174,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "3351:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19209,
+                  "src": "3343:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19173,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3343:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19176,
+                  "mutability": "mutable",
+                  "name": "blockTimestamp",
+                  "nameLocation": "3380:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19209,
+                  "src": "3373:21:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 19175,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3373:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3250:150:28"
+            },
+            "returnParameters": {
+              "id": 19178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3410:0:28"
+            },
+            "scope": 19303,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 19254,
+            "nodeType": "FunctionDefinition",
+            "src": "4095:388:28",
+            "nodes": [],
+            "body": {
+              "id": 19253,
+              "nodeType": "Block",
+              "src": "4270:213:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 19225,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19213,
+                        "src": "4287:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      {
+                        "id": 19226,
+                        "name": "blockTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19221,
+                        "src": "4296:14:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      ],
+                      "id": 19224,
+                      "name": "update",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19107,
+                      "src": "4280:6:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Data_$19042_storage_ptr_$_t_uint32_$returns$__$",
+                        "typeString": "function (struct Reserve.Data storage pointer,uint32)"
+                      }
+                    },
+                    "id": 19227,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4280:31:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 19228,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4280:31:28"
+                },
+                {
+                  "expression": {
+                    "id": 19235,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19229,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19213,
+                        "src": "4321:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19231,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "reserveRisky",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19029,
+                      "src": "4321:20:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19232,
+                          "name": "delRisky",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19215,
+                          "src": "4345:8:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19233,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "4345:18:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19234,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4345:20:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "4321:44:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19236,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4321:44:28"
+                },
+                {
+                  "expression": {
+                    "id": 19243,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19237,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19213,
+                        "src": "4375:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19239,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "reserveStable",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19031,
+                      "src": "4375:21:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19240,
+                          "name": "delStable",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19217,
+                          "src": "4400:9:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19241,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "4400:19:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19242,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4400:21:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "4375:46:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19244,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4375:46:28"
+                },
+                {
+                  "expression": {
+                    "id": 19251,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 19245,
+                        "name": "reserve",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19213,
+                        "src": "4431:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                          "typeString": "struct Reserve.Data storage pointer"
+                        }
+                      },
+                      "id": 19247,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "liquidity",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19033,
+                      "src": "4431:17:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 19248,
+                          "name": "delLiquidity",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19219,
+                          "src": "4452:12:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 19249,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "toUint128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19332,
+                        "src": "4452:22:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint128_$bound_to$_t_uint256_$",
+                          "typeString": "function (uint256) pure returns (uint128)"
+                        }
+                      },
+                      "id": 19250,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "4452:24:28",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "4431:45:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 19252,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4431:45:28"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 19210,
+              "nodeType": "StructuredDocumentation",
+              "src": "3629:461:28",
+              "text": "@notice                 Remove from both reserves and total supply of liquidity\n @param  reserve         Reserve storage to manipulate\n @param  delRisky        Amount of risky tokens to remove to the reserve\n @param  delStable       Amount of stable tokens to remove to the reserve\n @param  delLiquidity    Amount of liquidity removed from total supply\n @param  blockTimestamp  Timestamp used to update cumulative reserves"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nameLocation": "4104:6:28",
+            "parameters": {
+              "id": 19222,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19213,
+                  "mutability": "mutable",
+                  "name": "reserve",
+                  "nameLocation": "4133:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19254,
+                  "src": "4120:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                    "typeString": "struct Reserve.Data"
+                  },
+                  "typeName": {
+                    "id": 19212,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19211,
+                      "name": "Data",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19042,
+                      "src": "4120:4:28"
+                    },
+                    "referencedDeclaration": 19042,
+                    "src": "4120:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                      "typeString": "struct Reserve.Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19215,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "4158:8:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19254,
+                  "src": "4150:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19214,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4150:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19217,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "4184:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19254,
+                  "src": "4176:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19216,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4176:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19219,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "4211:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19254,
+                  "src": "4203:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19218,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4203:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19221,
+                  "mutability": "mutable",
+                  "name": "blockTimestamp",
+                  "nameLocation": "4240:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19254,
+                  "src": "4233:21:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 19220,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4233:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4110:150:28"
+            },
+            "returnParameters": {
+              "id": 19223,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4270:0:28"
+            },
+            "scope": 19303,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 19302,
+            "nodeType": "FunctionDefinition",
+            "src": "4915:356:28",
+            "nodes": [],
+            "body": {
+              "id": 19301,
+              "nodeType": "Block",
+              "src": "5066:205:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    19268
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 19268,
+                      "mutability": "mutable",
+                      "name": "liq",
+                      "nameLocation": "5084:3:28",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 19301,
+                      "src": "5076:11:28",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 19267,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "5076:7:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 19274,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 19271,
+                          "name": "reserve",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19258,
+                          "src": "5098:7:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Data_$19042_memory_ptr",
+                            "typeString": "struct Reserve.Data memory"
+                          }
+                        },
+                        "id": 19272,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "liquidity",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19033,
+                        "src": "5098:17:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      ],
+                      "id": 19270,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "5090:7:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint256_$",
+                        "typeString": "type(uint256)"
+                      },
+                      "typeName": {
+                        "id": 19269,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "5090:7:28",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 19273,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "5090:26:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "5076:40:28"
+                },
+                {
+                  "expression": {
+                    "id": 19286,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 19275,
+                      "name": "delRisky",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19263,
+                      "src": "5126:8:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 19285,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "components": [
+                          {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 19282,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 19276,
+                              "name": "delLiquidity",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19260,
+                              "src": "5138:12:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "*",
+                            "rightExpression": {
+                              "arguments": [
+                                {
+                                  "expression": {
+                                    "id": 19279,
+                                    "name": "reserve",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 19258,
+                                    "src": "5161:7:28",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Data_$19042_memory_ptr",
+                                      "typeString": "struct Reserve.Data memory"
+                                    }
+                                  },
+                                  "id": 19280,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "reserveRisky",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 19029,
+                                  "src": "5161:20:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint128",
+                                    "typeString": "uint128"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint128",
+                                    "typeString": "uint128"
+                                  }
+                                ],
+                                "id": 19278,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "5153:7:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": {
+                                  "id": 19277,
+                                  "name": "uint256",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "5153:7:28",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 19281,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "5153:29:28",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "5138:44:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "id": 19283,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "5137:46:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "/",
+                      "rightExpression": {
+                        "id": 19284,
+                        "name": "liq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19268,
+                        "src": "5186:3:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "5137:52:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "5126:63:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 19287,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5126:63:28"
+                },
+                {
+                  "expression": {
+                    "id": 19299,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 19288,
+                      "name": "delStable",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19265,
+                      "src": "5199:9:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 19298,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "components": [
+                          {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 19295,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 19289,
+                              "name": "delLiquidity",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 19260,
+                              "src": "5212:12:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "*",
+                            "rightExpression": {
+                              "arguments": [
+                                {
+                                  "expression": {
+                                    "id": 19292,
+                                    "name": "reserve",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 19258,
+                                    "src": "5235:7:28",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Data_$19042_memory_ptr",
+                                      "typeString": "struct Reserve.Data memory"
+                                    }
+                                  },
+                                  "id": 19293,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "reserveStable",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 19031,
+                                  "src": "5235:21:28",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint128",
+                                    "typeString": "uint128"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint128",
+                                    "typeString": "uint128"
+                                  }
+                                ],
+                                "id": 19291,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "5227:7:28",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint256_$",
+                                  "typeString": "type(uint256)"
+                                },
+                                "typeName": {
+                                  "id": 19290,
+                                  "name": "uint256",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "5227:7:28",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 19294,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "5227:30:28",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "5212:45:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "id": 19296,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "5211:47:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "/",
+                      "rightExpression": {
+                        "id": 19297,
+                        "name": "liq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 19268,
+                        "src": "5261:3:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "5211:53:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "5199:65:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 19300,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5199:65:28"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 19255,
+              "nodeType": "StructuredDocumentation",
+              "src": "4489:421:28",
+              "text": "@notice                 Calculates risky and stable token amounts of `delLiquidity`\n @param reserve          Reserve in memory to use reserves and liquidity of\n @param delLiquidity     Amount of liquidity to fetch underlying tokens of\n @return delRisky        Amount of risky tokens controlled by `delLiquidity`\n @return delStable       Amount of stable tokens controlled by `delLiquidity`"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAmounts",
+            "nameLocation": "4924:10:28",
+            "parameters": {
+              "id": 19261,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19258,
+                  "mutability": "mutable",
+                  "name": "reserve",
+                  "nameLocation": "4947:7:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19302,
+                  "src": "4935:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$19042_memory_ptr",
+                    "typeString": "struct Reserve.Data"
+                  },
+                  "typeName": {
+                    "id": 19257,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19256,
+                      "name": "Data",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19042,
+                      "src": "4935:4:28"
+                    },
+                    "referencedDeclaration": 19042,
+                    "src": "4935:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$19042_storage_ptr",
+                      "typeString": "struct Reserve.Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19260,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "4964:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19302,
+                  "src": "4956:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19259,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4956:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4934:43:28"
+            },
+            "returnParameters": {
+              "id": 19266,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19263,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "5033:8:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19302,
+                  "src": "5025:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19262,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5025:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19265,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "5051:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19302,
+                  "src": "5043:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19264,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5043:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5024:37:28"
+            },
+            "scope": 19303,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 19024,
+          "nodeType": "StructuredDocumentation",
+          "src": "93:114:28",
+          "text": "@title   Reserves Library\n @author  Primitive\n @dev     Data structure library for an Engine's Reserves"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          19303
+        ],
+        "name": "Reserve",
+        "nameLocation": "215:7:28",
+        "scope": 19304,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 28
+}

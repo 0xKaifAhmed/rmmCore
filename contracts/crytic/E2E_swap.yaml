@@ -15,3 +15,5 @@ filterFunctions:
     'E2E_swap.allocateCallback(uint256,uint256,bytes)',
   ]
 timeout: 3600 # 1 hour
+cryticArgs: ['--solc-remaps', 'interfaces=../interfaces libraries=../libraries test=../test PrimitiveFactory.sol=../PrimitiveFactory.sol' ]
+

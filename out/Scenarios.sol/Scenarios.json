@@ -1,0 +1,498 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getCaller",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "risky",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scenario",
+      "outputs": [
+        {
+          "internalType": "enum Scenarios.Scenario",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stable",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getCaller()": "ab470f05",
+    "risky()": "c08165d4",
+    "scenario()": "6b78c67a",
+    "stable()": "22be3de1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getCaller\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"risky\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scenario\",\"outputs\":[{\"internalType\":\"enum Scenarios.Scenario\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stable\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/callbacks/Scenarios.sol\":\"Scenarios\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/test/callbacks/Scenarios.sol\":{\"keccak256\":\"0xbe40c90c60194e007d95826692b12aaddec721c1fb32056ab5985b908543f001\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://fc00d48065e0d1390f228ad5857c1b0adbfca94d9916e43b9b70a94423c46f94\",\"dweb:/ipfs/QmS7fkzKBmgk7kNYSexiADy3hgTwpNdS4C1Bo1oLr3TgYP\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getCaller",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "risky",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "scenario",
+          "outputs": [
+            {
+              "internalType": "enum Scenarios.Scenario",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "stable",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/test/callbacks/Scenarios.sol": "Scenarios"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/test/callbacks/Scenarios.sol": {
+        "keccak256": "0xbe40c90c60194e007d95826692b12aaddec721c1fb32056ab5985b908543f001",
+        "urls": [
+          "bzz-raw://fc00d48065e0d1390f228ad5857c1b0adbfca94d9916e43b9b70a94423c46f94",
+          "dweb:/ipfs/QmS7fkzKBmgk7kNYSexiADy3hgTwpNdS4C1Bo1oLr3TgYP"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/test/callbacks/Scenarios.sol",
+    "id": 21348,
+    "exportedSymbols": {
+      "Scenarios": [
+        21347
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:411:35",
+    "nodes": [
+      {
+        "id": 21320,
+        "nodeType": "PragmaDirective",
+        "src": "41:22:35",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".6"
+        ]
+      },
+      {
+        "id": 21347,
+        "nodeType": "ContractDefinition",
+        "src": "65:386:35",
+        "nodes": [
+          {
+            "id": 21325,
+            "nodeType": "VariableDeclaration",
+            "src": "99:43:35",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "6b78c67a",
+            "mutability": "mutable",
+            "name": "scenario",
+            "nameLocation": "115:8:35",
+            "scope": 21347,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_Scenario_$21331",
+              "typeString": "enum Scenarios.Scenario"
+            },
+            "typeName": {
+              "id": 21322,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 21321,
+                "name": "Scenario",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 21331,
+                "src": "99:8:35"
+              },
+              "referencedDeclaration": 21331,
+              "src": "99:8:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Scenario_$21331",
+                "typeString": "enum Scenarios.Scenario"
+              }
+            },
+            "value": {
+              "expression": {
+                "id": 21323,
+                "name": "Scenario",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 21331,
+                "src": "126:8:35",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_enum$_Scenario_$21331_$",
+                  "typeString": "type(enum Scenarios.Scenario)"
+                }
+              },
+              "id": 21324,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "memberName": "SUCCESS",
+              "nodeType": "MemberAccess",
+              "referencedDeclaration": 21327,
+              "src": "126:16:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_Scenario_$21331",
+                "typeString": "enum Scenarios.Scenario"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 21331,
+            "nodeType": "EnumDefinition",
+            "src": "149:112:35",
+            "nodes": [],
+            "canonicalName": "Scenarios.Scenario",
+            "members": [
+              {
+                "id": 21326,
+                "name": "FAIL",
+                "nameLocation": "173:4:35",
+                "nodeType": "EnumValue",
+                "src": "173:4:35"
+              },
+              {
+                "id": 21327,
+                "name": "SUCCESS",
+                "nameLocation": "187:7:35",
+                "nodeType": "EnumValue",
+                "src": "187:7:35"
+              },
+              {
+                "id": 21328,
+                "name": "RISKY_ONLY",
+                "nameLocation": "204:10:35",
+                "nodeType": "EnumValue",
+                "src": "204:10:35"
+              },
+              {
+                "id": 21329,
+                "name": "STABLE_ONLY",
+                "nameLocation": "224:11:35",
+                "nodeType": "EnumValue",
+                "src": "224:11:35"
+              },
+              {
+                "id": 21330,
+                "name": "REENTRANCY",
+                "nameLocation": "245:10:35",
+                "nodeType": "EnumValue",
+                "src": "245:10:35"
+              }
+            ],
+            "name": "Scenario",
+            "nameLocation": "154:8:35"
+          },
+          {
+            "id": 21336,
+            "nodeType": "FunctionDefinition",
+            "src": "267:55:35",
+            "nodes": [],
+            "functionSelector": "c08165d4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "risky",
+            "nameLocation": "276:5:35",
+            "parameters": {
+              "id": 21332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "281:2:35"
+            },
+            "returnParameters": {
+              "id": 21335,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21334,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21336,
+                  "src": "313:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 21333,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "313:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "312:9:35"
+            },
+            "scope": 21347,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 21341,
+            "nodeType": "FunctionDefinition",
+            "src": "328:56:35",
+            "nodes": [],
+            "functionSelector": "22be3de1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stable",
+            "nameLocation": "337:6:35",
+            "parameters": {
+              "id": 21337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "343:2:35"
+            },
+            "returnParameters": {
+              "id": 21340,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21339,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21341,
+                  "src": "375:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 21338,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "375:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "374:9:35"
+            },
+            "scope": 21347,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 21346,
+            "nodeType": "FunctionDefinition",
+            "src": "390:59:35",
+            "nodes": [],
+            "functionSelector": "ab470f05",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCaller",
+            "nameLocation": "399:9:35",
+            "parameters": {
+              "id": 21342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "408:2:35"
+            },
+            "returnParameters": {
+              "id": 21345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21344,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21346,
+                  "src": "440:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 21343,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "440:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "439:9:35"
+            },
+            "scope": 21347,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          21347
+        ],
+        "name": "Scenarios",
+        "nameLocation": "83:9:35",
+        "scope": 21348,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 35
+}

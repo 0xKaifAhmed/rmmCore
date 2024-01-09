@@ -1,0 +1,1738 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Allocate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Create",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Remove",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "riskyForStable",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "deltaIn",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "deltaOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "Swap",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "UpdateLastTimestamp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Allocate\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Create\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Remove\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"riskyForStable\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deltaIn\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deltaOut\",\"type\":\"uint256\"}],\"name\":\"Swap\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"UpdateLastTimestamp\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Primitive\",\"events\":{\"Allocate(address,address,bytes32,uint256,uint256,uint256)\":{\"params\":{\"delLiquidity\":\"Amount of liquidity granted to `recipient`\",\"delRisky\":\"Amount of risky tokens deposited\",\"delStable\":\"Amount of stable tokens deposited\",\"from\":\"Method caller `msg.sender`\",\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address that receives liquidity\"}},\"Create(address,uint128,uint32,uint32,uint32,uint256,uint256,uint256)\":{\"details\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\",\"params\":{\"delLiquidity\":\"Amount of liquidity granted to `recipient`\",\"delRisky\":\"Amount of risky tokens deposited\",\"delStable\":\"Amount of stable tokens deposited\",\"from\":\"Calling `msg.sender` of the create function\",\"gamma\":\"Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9000, 10_000)\",\"maturity\":\"Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\",\"sigma\":\"AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\",\"strike\":\"Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\"}},\"Deposit(address,address,uint256,uint256)\":{\"params\":{\"delRisky\":\"Amount of risky tokens deposited\",\"delStable\":\"Amount of stable tokens deposited\",\"from\":\"Method caller `msg.sender`\",\"recipient\":\"Margin account recieving deposits\"}},\"Remove(address,bytes32,uint256,uint256,uint256)\":{\"params\":{\"delLiquidity\":\"Amount of liquidity decreased from `from`\",\"delRisky\":\"Amount of risky tokens deposited\",\"delStable\":\"Amount of stable tokens deposited\",\"from\":\"Method caller `msg.sender`\",\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"}},\"Swap(address,address,bytes32,bool,uint256,uint256)\":{\"params\":{\"deltaIn\":\"Amount of tokens added to reserves\",\"deltaOut\":\"Amount of tokens removed from reserves\",\"from\":\"Method caller `msg.sender`\",\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address that receives `deltaOut` amount of tokens\",\"riskyForStable\":\"If true, swaps risky to stable, else swaps stable to risky\"}},\"UpdateLastTimestamp(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"}},\"Withdraw(address,address,uint256,uint256)\":{\"params\":{\"delRisky\":\"Amount of risky tokens withdrawn\",\"delStable\":\"Amount of stable tokens withdrawn\",\"from\":\"Method caller `msg.sender`\",\"recipient\":\"Address that tokens are sent to\"}}},\"kind\":\"dev\",\"methods\":{},\"title\":\"Events of the Primitive Engine contract\",\"version\":1},\"userdoc\":{\"events\":{\"Allocate(address,address,bytes32,uint256,uint256,uint256)\":{\"notice\":\"Adds liquidity of risky and stable tokens to a specified `poolId`\"},\"Create(address,uint128,uint32,uint32,uint32,uint256,uint256,uint256)\":{\"notice\":\"Creates a pool with liquidity\"},\"Deposit(address,address,uint256,uint256)\":{\"notice\":\"Added stable and/or risky tokens to a margin account\"},\"Remove(address,bytes32,uint256,uint256,uint256)\":{\"notice\":\"Adds liquidity of risky and stable tokens to a specified `poolId`\"},\"Swap(address,address,bytes32,bool,uint256,uint256)\":{\"notice\":\"Swaps between `risky` and `stable` assets\"},\"UpdateLastTimestamp(bytes32)\":{\"notice\":\"Updates the time until expiry of the pool with `poolId`\"},\"Withdraw(address,address,uint256,uint256)\":{\"notice\":\"Removes stable and/or risky from a margin account\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/engine/IPrimitiveEngineEvents.sol\":\"IPrimitiveEngineEvents\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/engine/IPrimitiveEngineEvents.sol\":{\"keccak256\":\"0x9c76cc12c8bb1703c33d77f1fa36808e4cb02108d932e7af5abeba2315c0831f\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://ff617561f5d14f3343e86fb363f03515c9d386ec13e60f09db3761a4d60a7225\",\"dweb:/ipfs/QmWi8XFiSBPgRbxvDf3135mcGFM8MWWJjEGC6pypQn6sWT\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Allocate",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128",
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32",
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Create",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Deposit",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Remove",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "bool",
+              "name": "riskyForStable",
+              "type": "bool",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaIn",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaOut",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Swap",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "UpdateLastTimestamp",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Withdraw",
+          "anonymous": false
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/engine/IPrimitiveEngineEvents.sol": "IPrimitiveEngineEvents"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/engine/IPrimitiveEngineEvents.sol": {
+        "keccak256": "0x9c76cc12c8bb1703c33d77f1fa36808e4cb02108d932e7af5abeba2315c0831f",
+        "urls": [
+          "bzz-raw://ff617561f5d14f3343e86fb363f03515c9d386ec13e60f09db3761a4d60a7225",
+          "dweb:/ipfs/QmWi8XFiSBPgRbxvDf3135mcGFM8MWWJjEGC6pypQn6sWT"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineEvents.sol",
+    "id": 15292,
+    "exportedSymbols": {
+      "IPrimitiveEngineEvents": [
+        15291
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:4606:22",
+    "nodes": [
+      {
+        "id": 15200,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:22",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 15291,
+        "nodeType": "ContractDefinition",
+        "src": "141:4505:22",
+        "nodes": [
+          {
+            "id": 15220,
+            "nodeType": "EventDefinition",
+            "src": "1179:241:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15202,
+              "nodeType": "StructuredDocumentation",
+              "src": "180:994:22",
+              "text": "@notice             Creates a pool with liquidity\n @dev                Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @param  from        Calling `msg.sender` of the create function\n @param  strike      Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\n @param  sigma       AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\n @param  maturity    Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\n @param  gamma       Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9000, 10_000)\n @param  delRisky    Amount of risky tokens deposited\n @param  delStable   Amount of stable tokens deposited\n @param  delLiquidity Amount of liquidity granted to `recipient`"
+            },
+            "name": "Create",
+            "nameLocation": "1185:6:22",
+            "parameters": {
+              "id": 15219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15204,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "1217:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1201:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15203,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1201:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15206,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "strike",
+                  "nameLocation": "1239:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1231:14:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15205,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1231:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15208,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "sigma",
+                  "nameLocation": "1262:5:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1255:12:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15207,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1255:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15210,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "maturity",
+                  "nameLocation": "1292:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1277:23:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15209,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15212,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "gamma",
+                  "nameLocation": "1325:5:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1310:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15211,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1310:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15214,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "1348:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1340:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15213,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1340:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15216,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "1374:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1366:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15215,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1366:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15218,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "1401:12:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15220,
+                  "src": "1393:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15217,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1393:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1191:228:22"
+            }
+          },
+          {
+            "id": 15225,
+            "nodeType": "EventDefinition",
+            "src": "1611:50:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15221,
+              "nodeType": "StructuredDocumentation",
+              "src": "1426:180:22",
+              "text": "@notice             Updates the time until expiry of the pool with `poolId`\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "name": "UpdateLastTimestamp",
+            "nameLocation": "1617:19:22",
+            "parameters": {
+              "id": 15224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15223,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "1653:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15225,
+                  "src": "1637:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15222,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1637:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1636:24:22"
+            }
+          },
+          {
+            "id": 15236,
+            "nodeType": "EventDefinition",
+            "src": "2014:100:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15226,
+              "nodeType": "StructuredDocumentation",
+              "src": "1693:316:22",
+              "text": "@notice             Added stable and/or risky tokens to a margin account\n @param  from        Method caller `msg.sender`\n @param  recipient   Margin account recieving deposits\n @param  delRisky    Amount of risky tokens deposited\n @param  delStable   Amount of stable tokens deposited"
+            },
+            "name": "Deposit",
+            "nameLocation": "2020:7:22",
+            "parameters": {
+              "id": 15235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15228,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "2044:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15236,
+                  "src": "2028:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15227,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2028:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15230,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "2066:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15236,
+                  "src": "2050:25:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15229,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2050:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15232,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "2085:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15236,
+                  "src": "2077:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15231,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2077:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15234,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "2103:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15236,
+                  "src": "2095:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15233,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2095:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2027:86:22"
+            }
+          },
+          {
+            "id": 15247,
+            "nodeType": "EventDefinition",
+            "src": "2436:101:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15237,
+              "nodeType": "StructuredDocumentation",
+              "src": "2120:311:22",
+              "text": "@notice             Removes stable and/or risky from a margin account\n @param  from        Method caller `msg.sender`\n @param  recipient   Address that tokens are sent to\n @param  delRisky    Amount of risky tokens withdrawn\n @param  delStable   Amount of stable tokens withdrawn"
+            },
+            "name": "Withdraw",
+            "nameLocation": "2442:8:22",
+            "parameters": {
+              "id": 15246,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15239,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "2467:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15247,
+                  "src": "2451:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15238,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2451:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15241,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "2489:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15247,
+                  "src": "2473:25:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15240,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2473:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15243,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "2508:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15247,
+                  "src": "2500:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15242,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2500:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15245,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "2526:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15247,
+                  "src": "2518:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15244,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2518:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2450:86:22"
+            }
+          },
+          {
+            "id": 15262,
+            "nodeType": "EventDefinition",
+            "src": "3078:201:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15248,
+              "nodeType": "StructuredDocumentation",
+              "src": "2573:500:22",
+              "text": "@notice             Adds liquidity of risky and stable tokens to a specified `poolId`\n @param  from        Method caller `msg.sender`\n @param  recipient   Address that receives liquidity\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @param  delRisky    Amount of risky tokens deposited\n @param  delStable   Amount of stable tokens deposited\n @param  delLiquidity Amount of liquidity granted to `recipient`"
+            },
+            "name": "Allocate",
+            "nameLocation": "3084:8:22",
+            "parameters": {
+              "id": 15261,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15250,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "3118:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3102:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15249,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3102:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15252,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "3148:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3132:25:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15251,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3132:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15254,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "3183:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3167:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15253,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3167:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15256,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "3207:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3199:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15255,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3199:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15258,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "3233:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3225:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15257,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3225:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15260,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "3260:12:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15262,
+                  "src": "3252:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15259,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3252:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3092:186:22"
+            }
+          },
+          {
+            "id": 15275,
+            "nodeType": "EventDefinition",
+            "src": "3729:164:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15263,
+              "nodeType": "StructuredDocumentation",
+              "src": "3285:439:22",
+              "text": "@notice             Adds liquidity of risky and stable tokens to a specified `poolId`\n @param  from        Method caller `msg.sender`\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @param  delRisky    Amount of risky tokens deposited\n @param  delStable   Amount of stable tokens deposited\n @param  delLiquidity Amount of liquidity decreased from `from`"
+            },
+            "name": "Remove",
+            "nameLocation": "3735:6:22",
+            "parameters": {
+              "id": 15274,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15265,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "3767:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15275,
+                  "src": "3751:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15264,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3751:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15267,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "3797:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15275,
+                  "src": "3781:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15266,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3781:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15269,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "3821:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15275,
+                  "src": "3813:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15268,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3813:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15271,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "3847:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15275,
+                  "src": "3839:17:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15270,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3839:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15273,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "3874:12:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15275,
+                  "src": "3866:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15272,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3866:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3741:151:22"
+            }
+          },
+          {
+            "id": 15290,
+            "nodeType": "EventDefinition",
+            "src": "4450:194:22",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 15276,
+              "nodeType": "StructuredDocumentation",
+              "src": "3925:520:22",
+              "text": "@notice             Swaps between `risky` and `stable` assets\n @param  from        Method caller `msg.sender`\n @param  recipient   Address that receives `deltaOut` amount of tokens\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @param  riskyForStable  If true, swaps risky to stable, else swaps stable to risky\n @param  deltaIn     Amount of tokens added to reserves\n @param  deltaOut    Amount of tokens removed from reserves"
+            },
+            "name": "Swap",
+            "nameLocation": "4456:4:22",
+            "parameters": {
+              "id": 15289,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15278,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "4486:4:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4470:20:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15277,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4470:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15280,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "4516:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4500:25:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15279,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4500:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15282,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "4551:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4535:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15281,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4535:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15284,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "riskyForStable",
+                  "nameLocation": "4572:14:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4567:19:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 15283,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4567:4:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15286,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "deltaIn",
+                  "nameLocation": "4604:7:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4596:15:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15285,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4596:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15288,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "deltaOut",
+                  "nameLocation": "4629:8:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15290,
+                  "src": "4621:16:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15287,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4621:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4460:183:22"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 15201,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:74:22",
+          "text": "@title  Events of the Primitive Engine contract\n @author Primitive"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          15291
+        ],
+        "name": "IPrimitiveEngineEvents",
+        "nameLocation": "151:22:22",
+        "scope": 15292,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 22
+}

@@ -1,0 +1,1 @@
+cryticArgs: ['--solc-remaps', 'interfaces=../interfaces libraries=../libraries test=../test PrimitiveFactory.sol=../PrimitiveFactory.sol EchidnaPrimitiveManager=./EchidnaPrimitiveManager.sol' ]

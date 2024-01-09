@@ -1,0 +1,1997 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "fromMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "allocate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "riskyPerLp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "create",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "riskyForStable",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deltaIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deltaOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "fromMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "toMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "swap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "updateLastTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "lastTimestamp",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "allocate(bytes32,address,uint256,uint256,bool,bytes)": "d2957b8f",
+    "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": "be00763a",
+    "deposit(address,uint256,uint256,bytes)": "9e48ff5a",
+    "remove(bytes32,uint256)": "9f8cfade",
+    "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": "ca28fcd6",
+    "updateLastTimestamp(bytes32)": "11f99086",
+    "withdraw(address,uint256,uint256)": "b5c5f672"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fromMargin\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"riskyPerLp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"create\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"remove\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"bool\",\"name\":\"riskyForStable\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deltaIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deltaOut\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fromMargin\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"toMargin\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"swap\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"updateLastTimestamp\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"lastTimestamp\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"kind\":\"dev\",\"methods\":{\"allocate(bytes32,address,uint256,uint256,bool,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the allocateCallback function\",\"delRisky\":\"Amount of risky tokens to add\",\"delStable\":\"Amount of stable tokens to add\",\"fromMargin\":\"Whether the `msg.sender` pays with their margin balance, or must send tokens\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address to give the allocated liquidity to\"},\"returns\":{\"delLiquidity\":\"Amount of liquidity given to `recipient`\"}},\"create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the createCallback function\",\"delLiquidity\":\"Amount of liquidity units to allocate to the curve, wei value with 18 decimals of precision\",\"gamma\":\"Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)\",\"maturity\":\"Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\",\"riskyPerLp\":\"Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*\\u03c3^2/2))/\\u03c3\\u221a\\u03c4, valid for [0, 1e^(risky token decimals))\",\"sigma\":\"AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\",\"strike\":\"Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\"},\"returns\":{\"delRisky\":\"   Total amount of risky tokens provided to reserves\",\"delStable\":\"  Total amount of stable tokens provided to reserves\",\"poolId\":\"     Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"}},\"deposit(address,uint256,uint256,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the depositCallback function\",\"delRisky\":\"Amount of risky tokens to deposit\",\"delStable\":\"Amount of stable tokens to deposit\",\"recipient\":\"Recipient margin account of the deposited tokens\"}},\"remove(bytes32,uint256)\":{\"params\":{\"delLiquidity\":\"Amount of liquidity to remove\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"delRisky\":\"     Amount of risky tokens received from removed liquidity\",\"delStable\":\"    Amount of stable tokens received from removed liquidity\"}},\"swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the swapCallback function\",\"deltaIn\":\"Amount of tokens to swap in\",\"deltaOut\":\"Amount of tokens to swap out\",\"fromMargin\":\"Whether the `msg.sender` uses their margin balance, or must send tokens\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address that receives output token `deltaOut` amount\",\"riskyForStable\":\"If true, swap risky to stable, else swap stable to risky\",\"toMargin\":\"Whether the `deltaOut` amount is transferred or deposited into margin\"}},\"updateLastTimestamp(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"lastTimestamp\":\"Timestamp loaded into the state of the pool's Calibration.lastTimestamp\"}},\"withdraw(address,uint256,uint256)\":{\"params\":{\"delRisky\":\"Amount of risky tokens to withdraw\",\"delStable\":\"Amount of stable tokens to withdraw\",\"recipient\":\"Address that tokens are transferred to\"}}},\"title\":\"Action functions for the Primitive Engine contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"allocate(bytes32,address,uint256,uint256,bool,bytes)\":{\"notice\":\"Allocates risky and stable tokens to a specific curve with `poolId`\"},\"create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)\":{\"notice\":\"Initializes a curve with parameters in the `calibrations` storage mapping in the Engine\"},\"deposit(address,uint256,uint256,bytes)\":{\"notice\":\"Adds risky and/or stable tokens to a `recipient`'s internal balance account\"},\"remove(bytes32,uint256)\":{\"notice\":\"Unallocates risky and stable tokens from a specific curve with `poolId`\"},\"swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)\":{\"notice\":\"Swaps between `risky` and `stable` tokens\"},\"updateLastTimestamp(bytes32)\":{\"notice\":\"Updates the time until expiry of the pool by setting its last timestamp value\"},\"withdraw(address,uint256,uint256)\":{\"notice\":\"Removes risky and/or stable tokens from a `msg.sender`'s internal balance account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/engine/IPrimitiveEngineActions.sol\":\"IPrimitiveEngineActions\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/engine/IPrimitiveEngineActions.sol\":{\"keccak256\":\"0xa534fb3dae12b3ecfd9611c901b1a85c4a135fe4553facecb0d71505c797cb51\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://ff9b683f47b666070d714721cf1718e63df7c54d8197e1641fb4988c90c1ad3b\",\"dweb:/ipfs/QmT2wHLTMhGGBsHGo8wmg9U3gggfr5XzbUR92mFmH84vX1\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "allocate",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "riskyPerLp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "create",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deposit"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "remove",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bool",
+              "name": "riskyForStable",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaOut",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "toMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "swap"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateLastTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "lastTimestamp",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "allocate(bytes32,address,uint256,uint256,bool,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the allocateCallback function",
+              "delRisky": "Amount of risky tokens to add",
+              "delStable": "Amount of stable tokens to add",
+              "fromMargin": "Whether the `msg.sender` pays with their margin balance, or must send tokens",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma",
+              "recipient": "Address to give the allocated liquidity to"
+            },
+            "returns": {
+              "delLiquidity": "Amount of liquidity given to `recipient`"
+            }
+          },
+          "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the createCallback function",
+              "delLiquidity": "Amount of liquidity units to allocate to the curve, wei value with 18 decimals of precision",
+              "gamma": "Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)",
+              "maturity": "Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]",
+              "riskyPerLp": "Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*σ^2/2))/σ√τ, valid for [0, 1e^(risky token decimals))",
+              "sigma": "AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)",
+              "strike": "Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]"
+            },
+            "returns": {
+              "delRisky": "   Total amount of risky tokens provided to reserves",
+              "delStable": "  Total amount of stable tokens provided to reserves",
+              "poolId": "     Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            }
+          },
+          "deposit(address,uint256,uint256,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the depositCallback function",
+              "delRisky": "Amount of risky tokens to deposit",
+              "delStable": "Amount of stable tokens to deposit",
+              "recipient": "Recipient margin account of the deposited tokens"
+            }
+          },
+          "remove(bytes32,uint256)": {
+            "params": {
+              "delLiquidity": "Amount of liquidity to remove",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "delRisky": "     Amount of risky tokens received from removed liquidity",
+              "delStable": "    Amount of stable tokens received from removed liquidity"
+            }
+          },
+          "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the swapCallback function",
+              "deltaIn": "Amount of tokens to swap in",
+              "deltaOut": "Amount of tokens to swap out",
+              "fromMargin": "Whether the `msg.sender` uses their margin balance, or must send tokens",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma",
+              "recipient": "Address that receives output token `deltaOut` amount",
+              "riskyForStable": "If true, swap risky to stable, else swap stable to risky",
+              "toMargin": "Whether the `deltaOut` amount is transferred or deposited into margin"
+            }
+          },
+          "updateLastTimestamp(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "lastTimestamp": "Timestamp loaded into the state of the pool's Calibration.lastTimestamp"
+            }
+          },
+          "withdraw(address,uint256,uint256)": {
+            "params": {
+              "delRisky": "Amount of risky tokens to withdraw",
+              "delStable": "Amount of stable tokens to withdraw",
+              "recipient": "Address that tokens are transferred to"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "allocate(bytes32,address,uint256,uint256,bool,bytes)": {
+            "notice": "Allocates risky and stable tokens to a specific curve with `poolId`"
+          },
+          "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": {
+            "notice": "Initializes a curve with parameters in the `calibrations` storage mapping in the Engine"
+          },
+          "deposit(address,uint256,uint256,bytes)": {
+            "notice": "Adds risky and/or stable tokens to a `recipient`'s internal balance account"
+          },
+          "remove(bytes32,uint256)": {
+            "notice": "Unallocates risky and stable tokens from a specific curve with `poolId`"
+          },
+          "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": {
+            "notice": "Swaps between `risky` and `stable` tokens"
+          },
+          "updateLastTimestamp(bytes32)": {
+            "notice": "Updates the time until expiry of the pool by setting its last timestamp value"
+          },
+          "withdraw(address,uint256,uint256)": {
+            "notice": "Removes risky and/or stable tokens from a `msg.sender`'s internal balance account"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/engine/IPrimitiveEngineActions.sol": "IPrimitiveEngineActions"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/engine/IPrimitiveEngineActions.sol": {
+        "keccak256": "0xa534fb3dae12b3ecfd9611c901b1a85c4a135fe4553facecb0d71505c797cb51",
+        "urls": [
+          "bzz-raw://ff9b683f47b666070d714721cf1718e63df7c54d8197e1641fb4988c90c1ad3b",
+          "dweb:/ipfs/QmT2wHLTMhGGBsHGo8wmg9U3gggfr5XzbUR92mFmH84vX1"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineActions.sol",
+    "id": 15115,
+    "exportedSymbols": {
+      "IPrimitiveEngineActions": [
+        15114
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:5680:20",
+    "nodes": [
+      {
+        "id": 15008,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:20",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 15114,
+        "nodeType": "ContractDefinition",
+        "src": "152:5568:20",
+        "nodes": [
+          {
+            "id": 15017,
+            "nodeType": "FunctionDefinition",
+            "src": "530:85:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15010,
+              "nodeType": "StructuredDocumentation",
+              "src": "225:300:20",
+              "text": "@notice             Updates the time until expiry of the pool by setting its last timestamp value\n @param  poolId      Keccak256 hash of engine address, strike, sigma, maturity, and gamma\n @return lastTimestamp Timestamp loaded into the state of the pool's Calibration.lastTimestamp"
+            },
+            "functionSelector": "11f99086",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateLastTimestamp",
+            "nameLocation": "539:19:20",
+            "parameters": {
+              "id": 15013,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15012,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "567:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15017,
+                  "src": "559:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15011,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "559:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "558:16:20"
+            },
+            "returnParameters": {
+              "id": 15016,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15015,
+                  "mutability": "mutable",
+                  "name": "lastTimestamp",
+                  "nameLocation": "600:13:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15017,
+                  "src": "593:20:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15014,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "593:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "592:22:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15041,
+            "nodeType": "FunctionDefinition",
+            "src": "1936:335:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15018,
+              "nodeType": "StructuredDocumentation",
+              "src": "621:1310:20",
+              "text": "@notice             Initializes a curve with parameters in the `calibrations` storage mapping in the Engine\n @param  strike      Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\n @param  sigma       AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\n @param  maturity    Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\n @param  gamma       Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)\n @param  riskyPerLp  Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*σ^2/2))/σ√τ, valid for [0, 1e^(risky token decimals))\n @param  delLiquidity Amount of liquidity units to allocate to the curve, wei value with 18 decimals of precision\n @param  data        Arbitrary data that is passed to the createCallback function\n @return poolId      Keccak256 hash of engine address, strike, sigma, maturity, and gamma\n @return delRisky    Total amount of risky tokens provided to reserves\n @return delStable   Total amount of stable tokens provided to reserves"
+            },
+            "functionSelector": "be00763a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "create",
+            "nameLocation": "1945:6:20",
+            "parameters": {
+              "id": 15033,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15020,
+                  "mutability": "mutable",
+                  "name": "strike",
+                  "nameLocation": "1969:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "1961:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15019,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1961:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15022,
+                  "mutability": "mutable",
+                  "name": "sigma",
+                  "nameLocation": "1992:5:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "1985:12:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15021,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1985:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15024,
+                  "mutability": "mutable",
+                  "name": "maturity",
+                  "nameLocation": "2014:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2007:15:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15023,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2007:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15026,
+                  "mutability": "mutable",
+                  "name": "gamma",
+                  "nameLocation": "2039:5:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2032:12:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15025,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2032:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15028,
+                  "mutability": "mutable",
+                  "name": "riskyPerLp",
+                  "nameLocation": "2062:10:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2054:18:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15027,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2054:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15030,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "2090:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2082:20:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15029,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2082:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15032,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2127:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2112:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15031,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2112:5:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1951:186:20"
+            },
+            "returnParameters": {
+              "id": 15040,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15035,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "2193:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2185:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15034,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2185:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15037,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "2221:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2213:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15036,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2213:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15039,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "2251:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15041,
+                  "src": "2243:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15038,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2243:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2171:99:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15053,
+            "nodeType": "FunctionDefinition",
+            "src": "2699:141:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15042,
+              "nodeType": "StructuredDocumentation",
+              "src": "2303:391:20",
+              "text": "@notice             Adds risky and/or stable tokens to a `recipient`'s internal balance account\n @param  recipient   Recipient margin account of the deposited tokens\n @param  delRisky    Amount of risky tokens to deposit\n @param  delStable   Amount of stable tokens to deposit\n @param  data        Arbitrary data that is passed to the depositCallback function"
+            },
+            "functionSelector": "9e48ff5a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "2708:7:20",
+            "parameters": {
+              "id": 15051,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15044,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "2733:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15053,
+                  "src": "2725:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15043,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2725:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15046,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "2760:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15053,
+                  "src": "2752:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15045,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2752:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15048,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "2786:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15053,
+                  "src": "2778:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15047,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2778:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15050,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2820:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15053,
+                  "src": "2805:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15049,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2805:5:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2715:115:20"
+            },
+            "returnParameters": {
+              "id": 15052,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2839:0:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15063,
+            "nodeType": "FunctionDefinition",
+            "src": "3150:113:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15054,
+              "nodeType": "StructuredDocumentation",
+              "src": "2846:299:20",
+              "text": "@notice             Removes risky and/or stable tokens from a `msg.sender`'s internal balance account\n @param  recipient   Address that tokens are transferred to\n @param  delRisky    Amount of risky tokens to withdraw\n @param  delStable   Amount of stable tokens to withdraw"
+            },
+            "functionSelector": "b5c5f672",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "3159:8:20",
+            "parameters": {
+              "id": 15061,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15056,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "3185:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15063,
+                  "src": "3177:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15055,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3177:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15058,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "3212:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15063,
+                  "src": "3204:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15057,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3204:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15060,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "3238:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15063,
+                  "src": "3230:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15059,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3230:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3167:86:20"
+            },
+            "returnParameters": {
+              "id": 15062,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3262:0:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15081,
+            "nodeType": "FunctionDefinition",
+            "src": "3946:222:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15064,
+              "nodeType": "StructuredDocumentation",
+              "src": "3299:642:20",
+              "text": "@notice             Allocates risky and stable tokens to a specific curve with `poolId`\n @param  poolId      Keccak256 hash of engine address, strike, sigma, maturity, and gamma\n @param  recipient   Address to give the allocated liquidity to\n @param  delRisky    Amount of risky tokens to add\n @param  delStable   Amount of stable tokens to add\n @param  fromMargin  Whether the `msg.sender` pays with their margin balance, or must send tokens\n @param  data        Arbitrary data that is passed to the allocateCallback function\n @return delLiquidity Amount of liquidity given to `recipient`"
+            },
+            "functionSelector": "d2957b8f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "allocate",
+            "nameLocation": "3955:8:20",
+            "parameters": {
+              "id": 15077,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15066,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "3981:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "3973:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15065,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3973:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15068,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "4005:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "3997:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15067,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3997:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15070,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "4032:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "4024:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15069,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4024:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15072,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "4058:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "4050:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15071,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4050:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15074,
+                  "mutability": "mutable",
+                  "name": "fromMargin",
+                  "nameLocation": "4082:10:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "4077:15:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 15073,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4077:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15076,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "4117:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "4102:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15075,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4102:5:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3963:164:20"
+            },
+            "returnParameters": {
+              "id": 15080,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15079,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "4154:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15081,
+                  "src": "4146:20:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15078,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4146:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4145:22:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15093,
+            "nodeType": "FunctionDefinition",
+            "src": "4606:109:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15082,
+              "nodeType": "StructuredDocumentation",
+              "src": "4174:427:20",
+              "text": "@notice               Unallocates risky and stable tokens from a specific curve with `poolId`\n @param  poolId        Keccak256 hash of engine address, strike, sigma, maturity, and gamma\n @param  delLiquidity  Amount of liquidity to remove\n @return delRisky      Amount of risky tokens received from removed liquidity\n @return delStable     Amount of stable tokens received from removed liquidity"
+            },
+            "functionSelector": "9f8cfade",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nameLocation": "4615:6:20",
+            "parameters": {
+              "id": 15087,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15084,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "4630:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15093,
+                  "src": "4622:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15083,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4622:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15086,
+                  "mutability": "mutable",
+                  "name": "delLiquidity",
+                  "nameLocation": "4646:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15093,
+                  "src": "4638:20:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15085,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4638:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4621:38:20"
+            },
+            "returnParameters": {
+              "id": 15092,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15089,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "4686:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15093,
+                  "src": "4678:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15088,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4678:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15091,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "4704:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15093,
+                  "src": "4696:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15090,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4696:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4677:37:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15113,
+            "nodeType": "FunctionDefinition",
+            "src": "5481:237:20",
+            "nodes": [],
+            "documentation": {
+              "id": 15094,
+              "nodeType": "StructuredDocumentation",
+              "src": "4747:729:20",
+              "text": "@notice             Swaps between `risky` and `stable` tokens\n @param  recipient   Address that receives output token `deltaOut` amount\n @param  poolId      Keccak256 hash of engine address, strike, sigma, maturity, and gamma\n @param  riskyForStable If true, swap risky to stable, else swap stable to risky\n @param  deltaIn     Amount of tokens to swap in\n @param  deltaOut    Amount of tokens to swap out\n @param  fromMargin  Whether the `msg.sender` uses their margin balance, or must send tokens\n @param  toMargin    Whether the `deltaOut` amount is transferred or deposited into margin\n @param  data        Arbitrary data that is passed to the swapCallback function"
+            },
+            "functionSelector": "ca28fcd6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "5490:4:20",
+            "parameters": {
+              "id": 15111,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15096,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "5512:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5504:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5504:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15098,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "5539:6:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5531:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15097,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5531:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15100,
+                  "mutability": "mutable",
+                  "name": "riskyForStable",
+                  "nameLocation": "5560:14:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5555:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 15099,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5555:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15102,
+                  "mutability": "mutable",
+                  "name": "deltaIn",
+                  "nameLocation": "5592:7:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5584:15:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15101,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5584:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15104,
+                  "mutability": "mutable",
+                  "name": "deltaOut",
+                  "nameLocation": "5617:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5609:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15103,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5609:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15106,
+                  "mutability": "mutable",
+                  "name": "fromMargin",
+                  "nameLocation": "5640:10:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5635:15:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 15105,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5635:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15108,
+                  "mutability": "mutable",
+                  "name": "toMargin",
+                  "nameLocation": "5665:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5660:13:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 15107,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5660:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15110,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "5698:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15113,
+                  "src": "5683:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15109,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5683:5:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5494:214:20"
+            },
+            "returnParameters": {
+              "id": 15112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5717:0:20"
+            },
+            "scope": 15114,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 15009,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:85:20",
+          "text": "@title  Action functions for the Primitive Engine contract\n @author Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          15114
+        ],
+        "name": "IPrimitiveEngineActions",
+        "nameLocation": "162:23:20",
+        "scope": 15115,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 20
+}

@@ -1,0 +1,2009 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BUFFER",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MIN_LIQUIDITY",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "calibrations",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "lastTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "factory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "invariantOf",
+      "outputs": [
+        {
+          "internalType": "int128",
+          "name": "invariant",
+          "type": "int128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "liquidity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "margins",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "balanceRisky",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "balanceStable",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "reserves",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "reserveRisky",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "reserveStable",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "risky",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scaleFactorRisky",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scaleFactorStable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stable",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "BUFFER()": "8fbc3ecd",
+    "MIN_LIQUIDITY()": "21b77d63",
+    "PRECISION()": "aaf5eb68",
+    "calibrations(bytes32)": "23c5b952",
+    "factory()": "c45a0155",
+    "invariantOf(bytes32)": "546fecae",
+    "liquidity(address,bytes32)": "6b35bb6b",
+    "margins(address)": "38820465",
+    "reserves(bytes32)": "00bbf1e4",
+    "risky()": "c08165d4",
+    "scaleFactorRisky()": "55ebb825",
+    "scaleFactorStable()": "4dd0d056",
+    "stable()": "22be3de1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BUFFER\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MIN_LIQUIDITY\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRECISION\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"calibrations\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"invariantOf\",\"outputs\":[{\"internalType\":\"int128\",\"name\":\"invariant\",\"type\":\"int128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"liquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"margins\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"balanceRisky\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"balanceStable\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"reserves\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"reserveRisky\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"reserveStable\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"blockTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeStable\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"risky\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scaleFactorRisky\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scaleFactorStable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stable\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"kind\":\"dev\",\"methods\":{\"BUFFER()\":{\"returns\":{\"_0\":\"Amount of seconds after pool expiry which allows swaps, no swaps after buffer\"}},\"MIN_LIQUIDITY()\":{\"returns\":{\"_0\":\"Amount of liquidity burned on `create()` calls\"}},\"PRECISION()\":{\"returns\":{\"_0\":\"Precision units to scale to when doing token related calculations\"}},\"calibrations(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"gamma\":\"          Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)\",\"lastTimestamp\":\"  Last timestamp used to calculate time until expiry, aka \\\"tau\\\"\",\"maturity\":\"       Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\",\"sigma\":\"          AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\",\"strike\":\"         Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\"}},\"invariantOf(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"invariant\":\"  Signed fixed point 64.64 number, invariant of `poolId`\"}},\"liquidity(address,bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"liquidity\":\"  Liquidity owned by `account` in `poolId`\"}},\"margins(address)\":{\"params\":{\"account\":\"Margin account to fetch\"},\"returns\":{\"balanceRisky\":\"   Balance of the risky token\",\"balanceStable\":\"  Balance of the stable token\"}},\"reserves(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"blockTimestamp\":\"      Timestamp when the cumulative reserve values were last updated\",\"cumulativeLiquidity\":\" Cumulative sum of total supply of liquidity of the previous update\",\"cumulativeRisky\":\"     Cumulative sum of risky token reserves of the previous update\",\"cumulativeStable\":\"    Cumulative sum of stable token reserves of the previous update\",\"liquidity\":\"           Total supply of liquidity for the curve\",\"reserveRisky\":\"        Risky token balance in the reserve\",\"reserveStable\":\"       Stable token balance in the reserve\"}},\"scaleFactorRisky()\":{\"returns\":{\"_0\":\"Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals)\"}},\"scaleFactorStable()\":{\"returns\":{\"_0\":\"Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals)\"}},\"stable()\":{\"returns\":{\"_0\":\"Stable token address, a more accurate name is the quote token\"}}},\"title\":\"View functions of the Primitive Engine contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"calibrations(bytes32)\":{\"notice\":\"Fetches `Calibration` pool parameters\"},\"invariantOf(bytes32)\":{\"notice\":\"Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`\"},\"liquidity(address,bytes32)\":{\"notice\":\"Fetches position liquidity an account address and poolId\"},\"margins(address)\":{\"notice\":\"Fetches the margin balances of `account`\"},\"reserves(bytes32)\":{\"notice\":\"Fetches the global reserve state for a pool with `poolId`\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/engine/IPrimitiveEngineView.sol\":\"IPrimitiveEngineView\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/engine/IPrimitiveEngineView.sol\":{\"keccak256\":\"0xb1482c66ce10ddf51a64240e1888b0e1b86f2ef0d0ca56caa5d16b11ae39cf5c\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://9651c0db965e64e349342b46c0919b20d219cf9d50c1ffb8e6ef6b5f3498ca96\",\"dweb:/ipfs/QmdhWP4kfPs3KLBaEfx3VY44kvP5Jv3uexYx4jBzH8Ny1p\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "BUFFER",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "MIN_LIQUIDITY",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "PRECISION",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calibrations",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "factory",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "invariantOf",
+          "outputs": [
+            {
+              "internalType": "int128",
+              "name": "invariant",
+              "type": "int128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "liquidity",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "liquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "margins",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "balanceRisky",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "balanceStable",
+              "type": "uint128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "reserves",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "reserveRisky",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "reserveStable",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "liquidity",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeLiquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "risky",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "scaleFactorRisky",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "scaleFactorStable",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "stable",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "BUFFER()": {
+            "returns": {
+              "_0": "Amount of seconds after pool expiry which allows swaps, no swaps after buffer"
+            }
+          },
+          "MIN_LIQUIDITY()": {
+            "returns": {
+              "_0": "Amount of liquidity burned on `create()` calls"
+            }
+          },
+          "PRECISION()": {
+            "returns": {
+              "_0": "Precision units to scale to when doing token related calculations"
+            }
+          },
+          "calibrations(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "gamma": "          Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)",
+              "lastTimestamp": "  Last timestamp used to calculate time until expiry, aka \"tau\"",
+              "maturity": "       Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]",
+              "sigma": "          AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)",
+              "strike": "         Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]"
+            }
+          },
+          "invariantOf(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "invariant": "  Signed fixed point 64.64 number, invariant of `poolId`"
+            }
+          },
+          "liquidity(address,bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "liquidity": "  Liquidity owned by `account` in `poolId`"
+            }
+          },
+          "margins(address)": {
+            "params": {
+              "account": "Margin account to fetch"
+            },
+            "returns": {
+              "balanceRisky": "   Balance of the risky token",
+              "balanceStable": "  Balance of the stable token"
+            }
+          },
+          "reserves(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "blockTimestamp": "      Timestamp when the cumulative reserve values were last updated",
+              "cumulativeLiquidity": " Cumulative sum of total supply of liquidity of the previous update",
+              "cumulativeRisky": "     Cumulative sum of risky token reserves of the previous update",
+              "cumulativeStable": "    Cumulative sum of stable token reserves of the previous update",
+              "liquidity": "           Total supply of liquidity for the curve",
+              "reserveRisky": "        Risky token balance in the reserve",
+              "reserveStable": "       Stable token balance in the reserve"
+            }
+          },
+          "scaleFactorRisky()": {
+            "returns": {
+              "_0": "Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals)"
+            }
+          },
+          "scaleFactorStable()": {
+            "returns": {
+              "_0": "Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals)"
+            }
+          },
+          "stable()": {
+            "returns": {
+              "_0": "Stable token address, a more accurate name is the quote token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "calibrations(bytes32)": {
+            "notice": "Fetches `Calibration` pool parameters"
+          },
+          "invariantOf(bytes32)": {
+            "notice": "Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`"
+          },
+          "liquidity(address,bytes32)": {
+            "notice": "Fetches position liquidity an account address and poolId"
+          },
+          "margins(address)": {
+            "notice": "Fetches the margin balances of `account`"
+          },
+          "reserves(bytes32)": {
+            "notice": "Fetches the global reserve state for a pool with `poolId`"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/engine/IPrimitiveEngineView.sol": "IPrimitiveEngineView"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/engine/IPrimitiveEngineView.sol": {
+        "keccak256": "0xb1482c66ce10ddf51a64240e1888b0e1b86f2ef0d0ca56caa5d16b11ae39cf5c",
+        "urls": [
+          "bzz-raw://9651c0db965e64e349342b46c0919b20d219cf9d50c1ffb8e6ef6b5f3498ca96",
+          "dweb:/ipfs/QmdhWP4kfPs3KLBaEfx3VY44kvP5Jv3uexYx4jBzH8Ny1p"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineView.sol",
+    "id": 15406,
+    "exportedSymbols": {
+      "IPrimitiveEngineView": [
+        15405
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:4787:23",
+    "nodes": [
+      {
+        "id": 15293,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:23",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 15405,
+        "nodeType": "ContractDefinition",
+        "src": "149:4678:23",
+        "nodes": [
+          {
+            "id": 15302,
+            "nodeType": "FunctionDefinition",
+            "src": "542:78:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15295,
+              "nodeType": "StructuredDocumentation",
+              "src": "211:326:23",
+              "text": "@notice             Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @return invariant   Signed fixed point 64.64 number, invariant of `poolId`"
+            },
+            "functionSelector": "546fecae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "invariantOf",
+            "nameLocation": "551:11:23",
+            "parameters": {
+              "id": 15298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15297,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "571:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15302,
+                  "src": "563:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15296,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "563:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "562:16:23"
+            },
+            "returnParameters": {
+              "id": 15301,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15300,
+                  "mutability": "mutable",
+                  "name": "invariant",
+                  "nameLocation": "609:9:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15302,
+                  "src": "602:16:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int128",
+                    "typeString": "int128"
+                  },
+                  "typeName": {
+                    "id": 15299,
+                    "name": "int128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "602:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int128",
+                      "typeString": "int128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "601:18:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15308,
+            "nodeType": "FunctionDefinition",
+            "src": "738:53:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15303,
+              "nodeType": "StructuredDocumentation",
+              "src": "656:77:23",
+              "text": "@return Precision units to scale to when doing token related calculations"
+            },
+            "functionSelector": "aaf5eb68",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "PRECISION",
+            "nameLocation": "747:9:23",
+            "parameters": {
+              "id": 15304,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "756:2:23"
+            },
+            "returnParameters": {
+              "id": 15307,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15306,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15308,
+                  "src": "782:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15305,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "782:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "781:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15314,
+            "nodeType": "FunctionDefinition",
+            "src": "891:50:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15309,
+              "nodeType": "StructuredDocumentation",
+              "src": "797:89:23",
+              "text": "@return Amount of seconds after pool expiry which allows swaps, no swaps after buffer"
+            },
+            "functionSelector": "8fbc3ecd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "BUFFER",
+            "nameLocation": "900:6:23",
+            "parameters": {
+              "id": 15310,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "906:2:23"
+            },
+            "returnParameters": {
+              "id": 15313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15312,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15314,
+                  "src": "932:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15311,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "932:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "931:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15320,
+            "nodeType": "FunctionDefinition",
+            "src": "1041:57:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15315,
+              "nodeType": "StructuredDocumentation",
+              "src": "978:58:23",
+              "text": "@return Amount of liquidity burned on `create()` calls"
+            },
+            "functionSelector": "21b77d63",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "MIN_LIQUIDITY",
+            "nameLocation": "1050:13:23",
+            "parameters": {
+              "id": 15316,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1063:2:23"
+            },
+            "returnParameters": {
+              "id": 15319,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15318,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15320,
+                  "src": "1089:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15317,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1089:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1088:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15325,
+            "nodeType": "FunctionDefinition",
+            "src": "1173:51:23",
+            "nodes": [],
+            "functionSelector": "c45a0155",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "factory",
+            "nameLocation": "1182:7:23",
+            "parameters": {
+              "id": 15321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1189:2:23"
+            },
+            "returnParameters": {
+              "id": 15324,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15323,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15325,
+                  "src": "1215:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15322,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1215:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1214:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15330,
+            "nodeType": "FunctionDefinition",
+            "src": "1313:49:23",
+            "nodes": [],
+            "functionSelector": "c08165d4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "risky",
+            "nameLocation": "1322:5:23",
+            "parameters": {
+              "id": 15326,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1327:2:23"
+            },
+            "returnParameters": {
+              "id": 15329,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15328,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15330,
+                  "src": "1353:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15327,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1353:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1352:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15336,
+            "nodeType": "FunctionDefinition",
+            "src": "1446:50:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15331,
+              "nodeType": "StructuredDocumentation",
+              "src": "1368:73:23",
+              "text": "@return Stable token address, a more accurate name is the quote token"
+            },
+            "functionSelector": "22be3de1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stable",
+            "nameLocation": "1455:6:23",
+            "parameters": {
+              "id": 15332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1461:2:23"
+            },
+            "returnParameters": {
+              "id": 15335,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15334,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15336,
+                  "src": "1487:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15333,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1487:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1486:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15342,
+            "nodeType": "FunctionDefinition",
+            "src": "1588:60:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15337,
+              "nodeType": "StructuredDocumentation",
+              "src": "1502:81:23",
+              "text": "@return Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals)"
+            },
+            "functionSelector": "55ebb825",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "scaleFactorRisky",
+            "nameLocation": "1597:16:23",
+            "parameters": {
+              "id": 15338,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1613:2:23"
+            },
+            "returnParameters": {
+              "id": 15341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15340,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15342,
+                  "src": "1639:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15339,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1639:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1638:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15348,
+            "nodeType": "FunctionDefinition",
+            "src": "1741:61:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15343,
+              "nodeType": "StructuredDocumentation",
+              "src": "1654:82:23",
+              "text": "@return Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals)"
+            },
+            "functionSelector": "4dd0d056",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "scaleFactorStable",
+            "nameLocation": "1750:17:23",
+            "parameters": {
+              "id": 15344,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1767:2:23"
+            },
+            "returnParameters": {
+              "id": 15347,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15346,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15348,
+                  "src": "1793:7:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15345,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1793:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1792:9:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15368,
+            "nodeType": "FunctionDefinition",
+            "src": "2669:342:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15349,
+              "nodeType": "StructuredDocumentation",
+              "src": "1839:825:23",
+              "text": "@notice                      Fetches the global reserve state for a pool with `poolId`\n @param  poolId               Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @return reserveRisky         Risky token balance in the reserve\n @return reserveStable        Stable token balance in the reserve\n @return liquidity            Total supply of liquidity for the curve\n @return blockTimestamp       Timestamp when the cumulative reserve values were last updated\n @return cumulativeRisky      Cumulative sum of risky token reserves of the previous update\n @return cumulativeStable     Cumulative sum of stable token reserves of the previous update\n @return cumulativeLiquidity  Cumulative sum of total supply of liquidity of the previous update"
+            },
+            "functionSelector": "00bbf1e4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reserves",
+            "nameLocation": "2678:8:23",
+            "parameters": {
+              "id": 15352,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15351,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "2695:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2687:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15350,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2687:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2686:16:23"
+            },
+            "returnParameters": {
+              "id": 15367,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15354,
+                  "mutability": "mutable",
+                  "name": "reserveRisky",
+                  "nameLocation": "2771:12:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2763:20:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15353,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2763:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15356,
+                  "mutability": "mutable",
+                  "name": "reserveStable",
+                  "nameLocation": "2805:13:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2797:21:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15355,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2797:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15358,
+                  "mutability": "mutable",
+                  "name": "liquidity",
+                  "nameLocation": "2840:9:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2832:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15357,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2832:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15360,
+                  "mutability": "mutable",
+                  "name": "blockTimestamp",
+                  "nameLocation": "2870:14:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2863:21:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15359,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2863:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15362,
+                  "mutability": "mutable",
+                  "name": "cumulativeRisky",
+                  "nameLocation": "2906:15:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2898:23:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15361,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2898:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15364,
+                  "mutability": "mutable",
+                  "name": "cumulativeStable",
+                  "nameLocation": "2943:16:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2935:24:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15363,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2935:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15366,
+                  "mutability": "mutable",
+                  "name": "cumulativeLiquidity",
+                  "nameLocation": "2981:19:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15368,
+                  "src": "2973:27:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15365,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2973:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2749:261:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15384,
+            "nodeType": "FunctionDefinition",
+            "src": "3876:238:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15369,
+              "nodeType": "StructuredDocumentation",
+              "src": "3017:854:23",
+              "text": "@notice                 Fetches `Calibration` pool parameters\n @param  poolId          Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @return strike          Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\n @return sigma           AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\n @return maturity        Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\n @return lastTimestamp   Last timestamp used to calculate time until expiry, aka \"tau\"\n @return gamma           Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)"
+            },
+            "functionSelector": "23c5b952",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calibrations",
+            "nameLocation": "3885:12:23",
+            "parameters": {
+              "id": 15372,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15371,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "3906:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "3898:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15370,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3898:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3897:16:23"
+            },
+            "returnParameters": {
+              "id": 15383,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15374,
+                  "mutability": "mutable",
+                  "name": "strike",
+                  "nameLocation": "3982:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "3974:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15373,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3974:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15376,
+                  "mutability": "mutable",
+                  "name": "sigma",
+                  "nameLocation": "4009:5:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "4002:12:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15375,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4002:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15378,
+                  "mutability": "mutable",
+                  "name": "maturity",
+                  "nameLocation": "4035:8:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "4028:15:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15377,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4028:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15380,
+                  "mutability": "mutable",
+                  "name": "lastTimestamp",
+                  "nameLocation": "4064:13:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "4057:20:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15379,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4057:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15382,
+                  "mutability": "mutable",
+                  "name": "gamma",
+                  "nameLocation": "4098:5:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15384,
+                  "src": "4091:12:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15381,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4091:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3960:153:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15394,
+            "nodeType": "FunctionDefinition",
+            "src": "4375:94:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15385,
+              "nodeType": "StructuredDocumentation",
+              "src": "4120:250:23",
+              "text": "@notice             Fetches position liquidity an account address and poolId\n @param  poolId      Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\n @return liquidity   Liquidity owned by `account` in `poolId`"
+            },
+            "functionSelector": "6b35bb6b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidity",
+            "nameLocation": "4384:9:23",
+            "parameters": {
+              "id": 15390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15387,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "4402:7:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15394,
+                  "src": "4394:15:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15386,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4394:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15389,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "4419:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15394,
+                  "src": "4411:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15388,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4411:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4393:33:23"
+            },
+            "returnParameters": {
+              "id": 15393,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15392,
+                  "mutability": "mutable",
+                  "name": "liquidity",
+                  "nameLocation": "4458:9:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15394,
+                  "src": "4450:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15391,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4450:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4449:19:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 15404,
+            "nodeType": "FunctionDefinition",
+            "src": "4723:102:23",
+            "nodes": [],
+            "documentation": {
+              "id": 15395,
+              "nodeType": "StructuredDocumentation",
+              "src": "4475:243:23",
+              "text": "@notice                 Fetches the margin balances of `account`\n @param  account         Margin account to fetch\n @return balanceRisky    Balance of the risky token\n @return balanceStable   Balance of the stable token"
+            },
+            "functionSelector": "38820465",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "margins",
+            "nameLocation": "4732:7:23",
+            "parameters": {
+              "id": 15398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15397,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "4748:7:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15404,
+                  "src": "4740:15:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15396,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4740:7:23",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4739:17:23"
+            },
+            "returnParameters": {
+              "id": 15403,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15400,
+                  "mutability": "mutable",
+                  "name": "balanceRisky",
+                  "nameLocation": "4788:12:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15404,
+                  "src": "4780:20:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15399,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4780:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15402,
+                  "mutability": "mutable",
+                  "name": "balanceStable",
+                  "nameLocation": "4810:13:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15404,
+                  "src": "4802:21:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 15401,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4802:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4779:45:23"
+            },
+            "scope": 15405,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 15294,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:82:23",
+          "text": "@title  View functions of the Primitive Engine contract\n @author Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          15405
+        ],
+        "name": "IPrimitiveEngineView",
+        "nameLocation": "159:20:23",
+        "scope": 15406,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 23
+}

@@ -1,0 +1,1183 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "CalibrationError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DeltaInError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DeltaOutError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "GammaError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int128",
+          "name": "invariant",
+          "type": "int128"
+        },
+        {
+          "internalType": "int128",
+          "name": "nextInvariant",
+          "type": "int128"
+        }
+      ],
+      "name": "InvariantError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LockedError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "MinLiquidityError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolDuplicateError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolExpiredError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expected",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actual",
+          "type": "uint256"
+        }
+      ],
+      "name": "RiskyBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "RiskyPerLpError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "SigmaError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expected",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actual",
+          "type": "uint256"
+        }
+      ],
+      "name": "StableBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "StrikeError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UninitializedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroDeltasError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroLiquidityError",
+      "type": "error"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"CalibrationError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DeltaInError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DeltaOutError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"GammaError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"int128\",\"name\":\"invariant\",\"type\":\"int128\"},{\"internalType\":\"int128\",\"name\":\"nextInvariant\",\"type\":\"int128\"}],\"name\":\"InvariantError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"LockedError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"MinLiquidityError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolDuplicateError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolExpiredError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"expected\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"actual\",\"type\":\"uint256\"}],\"name\":\"RiskyBalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"RiskyPerLpError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"SigmaError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"expected\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"actual\",\"type\":\"uint256\"}],\"name\":\"StableBalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"StrikeError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UninitializedError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ZeroDeltasError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ZeroLiquidityError\",\"type\":\"error\"}],\"devdoc\":{\"author\":\"Primitive\",\"details\":\"Peripheral smart contracts should try catch and check if data matches another custom error\",\"errors\":{\"InvariantError(int128,int128)\":[{\"details\":\"Most important check as it verifies the validity of a desired swap\",\"params\":{\"invariant\":\"Pre-swap invariant updated with new tau\",\"nextInvariant\":\"Post-swap invariant after the swap amounts are applied to reserves\"}}],\"RiskyBalanceError(uint256,uint256)\":[{\"params\":{\"actual\":\"Actual risky balance\",\"expected\":\"Expected risky balance\"}}],\"StableBalanceError(uint256,uint256)\":[{\"params\":{\"actual\":\"Actual stable balance\",\"expected\":\"Expected stable balance\"}}]},\"kind\":\"dev\",\"methods\":{},\"title\":\"Errors for the Primitive Engine contract\",\"version\":1},\"userdoc\":{\"errors\":{\"BalanceError()\":[{\"notice\":\"Thrown when the balanceOf function is not successful and does not return data\"}],\"CalibrationError(uint256,uint256)\":[{\"notice\":\"Thrown when the parameters of a new pool are invalid, causing initial reserves to be 0\"}],\"DeltaInError()\":[{\"notice\":\"Thrown when the deltaIn parameter is 0\"}],\"DeltaOutError()\":[{\"notice\":\"Thrown when the deltaOut parameter is 0\"}],\"GammaError(uint256)\":[{\"notice\":\"Thrown when gamma, equal to 1 - fee %, is outside its bounds: 9_000 <= gamma <= 10_000; 1_000 = 10% fee\"}],\"InvariantError(int128,int128)\":[{\"notice\":\"Thrown when the invariant check fails\"}],\"LockedError()\":[{\"notice\":\"Thrown on attempted re-entrancy on a function with a re-entrancy guard\"}],\"MinLiquidityError(uint256)\":[{\"notice\":\"Thrown when liquidity is lower than or equal to the minimum amount of liquidity\"}],\"PoolDuplicateError()\":[{\"notice\":\"Thrown in create when a pool with computed poolId already exists\"}],\"PoolExpiredError()\":[{\"notice\":\"Thrown when calling an expired pool, where block.timestamp > maturity, + BUFFER if swap\"}],\"RiskyBalanceError(uint256,uint256)\":[{\"notice\":\"Thrown when the expected risky balance is less than the actual balance\"}],\"RiskyPerLpError(uint256)\":[{\"notice\":\"Thrown when riskyPerLp is outside the range of acceptable values, 0 < riskyPerLp <= 1eRiskyDecimals\"}],\"SigmaError(uint256)\":[{\"notice\":\"Thrown when sigma is outside the range of acceptable values, 1 <= sigma <= 1e7 with 4 precision\"}],\"StableBalanceError(uint256,uint256)\":[{\"notice\":\"Thrown when the expected stable balance is less than the actual balance\"}],\"StrikeError(uint256)\":[{\"notice\":\"Thrown when strike is not valid, i.e. equal to 0 or greater than 2^128\"}],\"UninitializedError()\":[{\"notice\":\"Thrown when the pool with poolId has not been created\"}],\"ZeroDeltasError()\":[{\"notice\":\"Thrown when the risky or stable amount is 0\"}],\"ZeroLiquidityError()\":[{\"notice\":\"Thrown when the liquidity parameter is 0\"}]},\"kind\":\"user\",\"methods\":{},\"notice\":\"Custom errors are encoded with their selector and arguments\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/engine/IPrimitiveEngineErrors.sol\":\"IPrimitiveEngineErrors\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/engine/IPrimitiveEngineErrors.sol\":{\"keccak256\":\"0x86bbde924956e7901b893c6f5175f0020b2766a7a8f3defb376bc1ee956ea5b1\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://d9865859c64ab77b4f3031451221acc576e6b960f1633f70a782163639442caa\",\"dweb:/ipfs/QmYCQEBxx3FiGkVuXRuEcrr4sbC9UKuFwDNj84tyq2jKag\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "BalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "CalibrationError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DeltaInError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DeltaOutError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "GammaError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int128",
+              "name": "invariant",
+              "type": "int128"
+            },
+            {
+              "internalType": "int128",
+              "name": "nextInvariant",
+              "type": "int128"
+            }
+          ],
+          "type": "error",
+          "name": "InvariantError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "LockedError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "MinLiquidityError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolDuplicateError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolExpiredError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "expected",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actual",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "RiskyBalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "RiskyPerLpError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "SigmaError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "expected",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actual",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "StableBalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "StrikeError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "UninitializedError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ZeroDeltasError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ZeroLiquidityError"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/engine/IPrimitiveEngineErrors.sol": "IPrimitiveEngineErrors"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/engine/IPrimitiveEngineErrors.sol": {
+        "keccak256": "0x86bbde924956e7901b893c6f5175f0020b2766a7a8f3defb376bc1ee956ea5b1",
+        "urls": [
+          "bzz-raw://d9865859c64ab77b4f3031451221acc576e6b960f1633f70a782163639442caa",
+          "dweb:/ipfs/QmYCQEBxx3FiGkVuXRuEcrr4sbC9UKuFwDNj84tyq2jKag"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineErrors.sol",
+    "id": 15199,
+    "exportedSymbols": {
+      "IPrimitiveEngineErrors": [
+        15198
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:3060:21",
+    "nodes": [
+      {
+        "id": 15116,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:21",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 15198,
+        "nodeType": "ContractDefinition",
+        "src": "317:2783:21",
+        "nodes": [
+          {
+            "id": 15120,
+            "nodeType": "ErrorDefinition",
+            "src": "443:20:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15118,
+              "nodeType": "StructuredDocumentation",
+              "src": "356:82:21",
+              "text": "@notice Thrown on attempted re-entrancy on a function with a re-entrancy guard"
+            },
+            "name": "LockedError",
+            "nameLocation": "449:11:21",
+            "parameters": {
+              "id": 15119,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "460:2:21"
+            }
+          },
+          {
+            "id": 15123,
+            "nodeType": "ErrorDefinition",
+            "src": "563:21:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15121,
+              "nodeType": "StructuredDocumentation",
+              "src": "469:89:21",
+              "text": "@notice Thrown when the balanceOf function is not successful and does not return data"
+            },
+            "name": "BalanceError",
+            "nameLocation": "569:12:21",
+            "parameters": {
+              "id": 15122,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "581:2:21"
+            }
+          },
+          {
+            "id": 15126,
+            "nodeType": "ErrorDefinition",
+            "src": "671:27:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15124,
+              "nodeType": "StructuredDocumentation",
+              "src": "590:76:21",
+              "text": "@notice Thrown in create when a pool with computed poolId already exists"
+            },
+            "name": "PoolDuplicateError",
+            "nameLocation": "677:18:21",
+            "parameters": {
+              "id": 15125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "695:2:21"
+            }
+          },
+          {
+            "id": 15129,
+            "nodeType": "ErrorDefinition",
+            "src": "808:25:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15127,
+              "nodeType": "StructuredDocumentation",
+              "src": "704:99:21",
+              "text": "@notice Thrown when calling an expired pool, where block.timestamp > maturity, + BUFFER if swap"
+            },
+            "name": "PoolExpiredError",
+            "nameLocation": "814:16:21",
+            "parameters": {
+              "id": 15128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "830:2:21"
+            }
+          },
+          {
+            "id": 15134,
+            "nodeType": "ErrorDefinition",
+            "src": "935:39:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15130,
+              "nodeType": "StructuredDocumentation",
+              "src": "839:91:21",
+              "text": "@notice Thrown when liquidity is lower than or equal to the minimum amount of liquidity"
+            },
+            "name": "MinLiquidityError",
+            "nameLocation": "941:17:21",
+            "parameters": {
+              "id": 15133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15132,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "967:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15134,
+                  "src": "959:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15131,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "959:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "958:15:21"
+            }
+          },
+          {
+            "id": 15139,
+            "nodeType": "ErrorDefinition",
+            "src": "1096:37:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15135,
+              "nodeType": "StructuredDocumentation",
+              "src": "980:111:21",
+              "text": "@notice Thrown when riskyPerLp is outside the range of acceptable values, 0 < riskyPerLp <= 1eRiskyDecimals"
+            },
+            "name": "RiskyPerLpError",
+            "nameLocation": "1102:15:21",
+            "parameters": {
+              "id": 15138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15137,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1126:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15139,
+                  "src": "1118:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15136,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1118:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:15:21"
+            }
+          },
+          {
+            "id": 15144,
+            "nodeType": "ErrorDefinition",
+            "src": "1251:32:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15140,
+              "nodeType": "StructuredDocumentation",
+              "src": "1139:107:21",
+              "text": "@notice Thrown when sigma is outside the range of acceptable values, 1 <= sigma <= 1e7 with 4 precision"
+            },
+            "name": "SigmaError",
+            "nameLocation": "1257:10:21",
+            "parameters": {
+              "id": 15143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15142,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1276:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15144,
+                  "src": "1268:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15141,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1268:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1267:15:21"
+            }
+          },
+          {
+            "id": 15149,
+            "nodeType": "ErrorDefinition",
+            "src": "1376:33:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15145,
+              "nodeType": "StructuredDocumentation",
+              "src": "1289:82:21",
+              "text": "@notice Thrown when strike is not valid, i.e. equal to 0 or greater than 2^128"
+            },
+            "name": "StrikeError",
+            "nameLocation": "1382:11:21",
+            "parameters": {
+              "id": 15148,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15147,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1402:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15149,
+                  "src": "1394:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15146,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1394:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1393:15:21"
+            }
+          },
+          {
+            "id": 15154,
+            "nodeType": "ErrorDefinition",
+            "src": "1535:32:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15150,
+              "nodeType": "StructuredDocumentation",
+              "src": "1415:115:21",
+              "text": "@notice Thrown when gamma, equal to 1 - fee %, is outside its bounds: 9_000 <= gamma <= 10_000; 1_000 = 10% fee"
+            },
+            "name": "GammaError",
+            "nameLocation": "1541:10:21",
+            "parameters": {
+              "id": 15153,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15152,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1560:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15154,
+                  "src": "1552:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15151,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1552:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1551:15:21"
+            }
+          },
+          {
+            "id": 15161,
+            "nodeType": "ErrorDefinition",
+            "src": "1676:60:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15155,
+              "nodeType": "StructuredDocumentation",
+              "src": "1573:98:21",
+              "text": "@notice Thrown when the parameters of a new pool are invalid, causing initial reserves to be 0"
+            },
+            "name": "CalibrationError",
+            "nameLocation": "1682:16:21",
+            "parameters": {
+              "id": 15160,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15157,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "1707:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15161,
+                  "src": "1699:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1699:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15159,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "1725:9:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15161,
+                  "src": "1717:17:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15158,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1717:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1698:37:21"
+            }
+          },
+          {
+            "id": 15168,
+            "nodeType": "ErrorDefinition",
+            "src": "1929:58:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15162,
+              "nodeType": "StructuredDocumentation",
+              "src": "1742:182:21",
+              "text": "@notice         Thrown when the expected risky balance is less than the actual balance\n @param expected Expected risky balance\n @param actual   Actual risky balance"
+            },
+            "name": "RiskyBalanceError",
+            "nameLocation": "1935:17:21",
+            "parameters": {
+              "id": 15167,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15164,
+                  "mutability": "mutable",
+                  "name": "expected",
+                  "nameLocation": "1961:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15168,
+                  "src": "1953:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15163,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1953:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15166,
+                  "mutability": "mutable",
+                  "name": "actual",
+                  "nameLocation": "1979:6:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15168,
+                  "src": "1971:14:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15165,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1971:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1952:34:21"
+            }
+          },
+          {
+            "id": 15175,
+            "nodeType": "ErrorDefinition",
+            "src": "2183:59:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15169,
+              "nodeType": "StructuredDocumentation",
+              "src": "1993:185:21",
+              "text": "@notice         Thrown when the expected stable balance is less than the actual balance\n @param expected Expected stable balance\n @param actual   Actual stable balance"
+            },
+            "name": "StableBalanceError",
+            "nameLocation": "2189:18:21",
+            "parameters": {
+              "id": 15174,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15171,
+                  "mutability": "mutable",
+                  "name": "expected",
+                  "nameLocation": "2216:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15175,
+                  "src": "2208:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15170,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2208:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15173,
+                  "mutability": "mutable",
+                  "name": "actual",
+                  "nameLocation": "2234:6:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15175,
+                  "src": "2226:14:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15172,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2226:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2207:34:21"
+            }
+          },
+          {
+            "id": 15178,
+            "nodeType": "ErrorDefinition",
+            "src": "2318:27:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15176,
+              "nodeType": "StructuredDocumentation",
+              "src": "2248:65:21",
+              "text": "@notice Thrown when the pool with poolId has not been created"
+            },
+            "name": "UninitializedError",
+            "nameLocation": "2324:18:21",
+            "parameters": {
+              "id": 15177,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2342:2:21"
+            }
+          },
+          {
+            "id": 15181,
+            "nodeType": "ErrorDefinition",
+            "src": "2411:24:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15179,
+              "nodeType": "StructuredDocumentation",
+              "src": "2351:55:21",
+              "text": "@notice Thrown when the risky or stable amount is 0"
+            },
+            "name": "ZeroDeltasError",
+            "nameLocation": "2417:15:21",
+            "parameters": {
+              "id": 15180,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2432:2:21"
+            }
+          },
+          {
+            "id": 15184,
+            "nodeType": "ErrorDefinition",
+            "src": "2498:27:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15182,
+              "nodeType": "StructuredDocumentation",
+              "src": "2441:52:21",
+              "text": "@notice Thrown when the liquidity parameter is 0"
+            },
+            "name": "ZeroLiquidityError",
+            "nameLocation": "2504:18:21",
+            "parameters": {
+              "id": 15183,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2522:2:21"
+            }
+          },
+          {
+            "id": 15187,
+            "nodeType": "ErrorDefinition",
+            "src": "2586:21:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15185,
+              "nodeType": "StructuredDocumentation",
+              "src": "2531:50:21",
+              "text": "@notice Thrown when the deltaIn parameter is 0"
+            },
+            "name": "DeltaInError",
+            "nameLocation": "2592:12:21",
+            "parameters": {
+              "id": 15186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2604:2:21"
+            }
+          },
+          {
+            "id": 15190,
+            "nodeType": "ErrorDefinition",
+            "src": "2669:22:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15188,
+              "nodeType": "StructuredDocumentation",
+              "src": "2613:51:21",
+              "text": "@notice Thrown when the deltaOut parameter is 0"
+            },
+            "name": "DeltaOutError",
+            "nameLocation": "2675:13:21",
+            "parameters": {
+              "id": 15189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2688:2:21"
+            }
+          },
+          {
+            "id": 15197,
+            "nodeType": "ErrorDefinition",
+            "src": "3037:61:21",
+            "nodes": [],
+            "documentation": {
+              "id": 15191,
+              "nodeType": "StructuredDocumentation",
+              "src": "2697:335:21",
+              "text": "@notice                 Thrown when the invariant check fails\n @dev                    Most important check as it verifies the validity of a desired swap\n @param  invariant       Pre-swap invariant updated with new tau\n @param  nextInvariant   Post-swap invariant after the swap amounts are applied to reserves"
+            },
+            "name": "InvariantError",
+            "nameLocation": "3043:14:21",
+            "parameters": {
+              "id": 15196,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15193,
+                  "mutability": "mutable",
+                  "name": "invariant",
+                  "nameLocation": "3065:9:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15197,
+                  "src": "3058:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int128",
+                    "typeString": "int128"
+                  },
+                  "typeName": {
+                    "id": 15192,
+                    "name": "int128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3058:6:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int128",
+                      "typeString": "int128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15195,
+                  "mutability": "mutable",
+                  "name": "nextInvariant",
+                  "nameLocation": "3083:13:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15197,
+                  "src": "3076:20:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int128",
+                    "typeString": "int128"
+                  },
+                  "typeName": {
+                    "id": 15194,
+                    "name": "int128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3076:6:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int128",
+                      "typeString": "int128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3057:40:21"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 15117,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:250:21",
+          "text": "@title  Errors for the Primitive Engine contract\n @author Primitive\n @notice Custom errors are encoded with their selector and arguments\n @dev    Peripheral smart contracts should try catch and check if data matches another custom error"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          15198
+        ],
+        "name": "IPrimitiveEngineErrors",
+        "nameLocation": "327:22:21",
+        "scope": 15199,
+        "usedErrors": [
+          15120,
+          15123,
+          15126,
+          15129,
+          15134,
+          15139,
+          15144,
+          15149,
+          15154,
+          15161,
+          15168,
+          15175,
+          15178,
+          15181,
+          15184,
+          15187,
+          15190,
+          15197
+        ]
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 21
+}

@@ -1,0 +1,291 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "swapCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "swapCallback(uint256,uint256,bytes)": "923b8a2a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"swapCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"kind\":\"dev\",\"methods\":{\"swapCallback(uint256,uint256,bytes)\":{\"params\":{\"data\":\"Calldata passed on swap function call\",\"delRisky\":\"Amount of risky tokens required to pay the swap with\",\"delStable\":\"Amount of stable tokens required to pay the swap with\"}}},\"title\":\"Primitive Swap Callback\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"swapCallback(uint256,uint256,bytes)\":{\"notice\":\"Triggered when swapping tokens in an Engine\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/callback/IPrimitiveSwapCallback.sol\":\"IPrimitiveSwapCallback\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/callback/IPrimitiveSwapCallback.sol\":{\"keccak256\":\"0x5c3a3859edaef8a6ddcedfd537c53080b7e2477c134439a970c1eadfcf71af05\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://546a24d7a219f0e674d4f154957d75fcdc46c70c4acf868cebd77473f3969f8e\",\"dweb:/ipfs/QmfKNRNS3kasfyPmusqoVAw3S2tqE1km9r5HbSiArZvRXE\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "swapCallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "swapCallback(uint256,uint256,bytes)": {
+            "params": {
+              "data": "Calldata passed on swap function call",
+              "delRisky": "Amount of risky tokens required to pay the swap with",
+              "delStable": "Amount of stable tokens required to pay the swap with"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "swapCallback(uint256,uint256,bytes)": {
+            "notice": "Triggered when swapping tokens in an Engine"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/callback/IPrimitiveSwapCallback.sol": "IPrimitiveSwapCallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/callback/IPrimitiveSwapCallback.sol": {
+        "keccak256": "0x5c3a3859edaef8a6ddcedfd537c53080b7e2477c134439a970c1eadfcf71af05",
+        "urls": [
+          "bzz-raw://546a24d7a219f0e674d4f154957d75fcdc46c70c4acf868cebd77473f3969f8e",
+          "dweb:/ipfs/QmfKNRNS3kasfyPmusqoVAw3S2tqE1km9r5HbSiArZvRXE"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/callback/IPrimitiveSwapCallback.sol",
+    "id": 15007,
+    "exportedSymbols": {
+      "IPrimitiveSwapCallback": [
+        15006
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:550:19",
+    "nodes": [
+      {
+        "id": 14994,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 15006,
+        "nodeType": "ContractDefinition",
+        "src": "125:465:19",
+        "nodes": [
+          {
+            "id": 15005,
+            "nodeType": "FunctionDefinition",
+            "src": "469:119:19",
+            "nodes": [],
+            "documentation": {
+              "id": 14996,
+              "nodeType": "StructuredDocumentation",
+              "src": "164:300:19",
+              "text": "@notice              Triggered when swapping tokens in an Engine\n @param  delRisky     Amount of risky tokens required to pay the swap with\n @param  delStable    Amount of stable tokens required to pay the swap with\n @param  data         Calldata passed on swap function call"
+            },
+            "functionSelector": "923b8a2a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swapCallback",
+            "nameLocation": "478:12:19",
+            "parameters": {
+              "id": 15003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14998,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "508:8:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15005,
+                  "src": "500:16:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14997,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "500:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15000,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "534:9:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15005,
+                  "src": "526:17:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14999,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15002,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "568:4:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 15005,
+                  "src": "553:19:19",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15001,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "553:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "490:88:19"
+            },
+            "returnParameters": {
+              "id": 15004,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "587:0:19"
+            },
+            "scope": 15006,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 14995,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:58:19",
+          "text": "@title  Primitive Swap Callback\n @author Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          15006
+        ],
+        "name": "IPrimitiveSwapCallback",
+        "nameLocation": "135:22:19",
+        "scope": 15007,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 19
+}

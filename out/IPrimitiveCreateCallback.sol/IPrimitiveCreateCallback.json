@@ -1,0 +1,291 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "createCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "createCallback(uint256,uint256,bytes)": "c171d27e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"createCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"kind\":\"dev\",\"methods\":{\"createCallback(uint256,uint256,bytes)\":{\"params\":{\"data\":\"Calldata passed on create function call\",\"delRisky\":\"Amount of risky tokens required to initialize risky reserve\",\"delStable\":\"Amount of stable tokens required to initialize stable reserve\"}}},\"title\":\"Primitive Create Callback\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"createCallback(uint256,uint256,bytes)\":{\"notice\":\"Triggered when creating a new pool for an Engine\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/callback/IPrimitiveCreateCallback.sol\":\"IPrimitiveCreateCallback\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/callback/IPrimitiveCreateCallback.sol\":{\"keccak256\":\"0x341936b1b976c4a29bf9c112546ec9a7ea14a87024ae2d7c480df88bf4075a8f\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://5bacd19b1aa1d2a80b731babab6c0108dac1624687946b65af2904593eaa1028\",\"dweb:/ipfs/QmYVYbRghxEQxFWioSuF2LmjBoC9eSmE1Hs1DZyFxYtymU\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createCallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "createCallback(uint256,uint256,bytes)": {
+            "params": {
+              "data": "Calldata passed on create function call",
+              "delRisky": "Amount of risky tokens required to initialize risky reserve",
+              "delStable": "Amount of stable tokens required to initialize stable reserve"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "createCallback(uint256,uint256,bytes)": {
+            "notice": "Triggered when creating a new pool for an Engine"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/callback/IPrimitiveCreateCallback.sol": "IPrimitiveCreateCallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/callback/IPrimitiveCreateCallback.sol": {
+        "keccak256": "0x341936b1b976c4a29bf9c112546ec9a7ea14a87024ae2d7c480df88bf4075a8f",
+        "urls": [
+          "bzz-raw://5bacd19b1aa1d2a80b731babab6c0108dac1624687946b65af2904593eaa1028",
+          "dweb:/ipfs/QmYVYbRghxEQxFWioSuF2LmjBoC9eSmE1Hs1DZyFxYtymU"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/callback/IPrimitiveCreateCallback.sol",
+    "id": 14965,
+    "exportedSymbols": {
+      "IPrimitiveCreateCallback": [
+        14964
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:578:16",
+    "nodes": [
+      {
+        "id": 14952,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:16",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 14964,
+        "nodeType": "ContractDefinition",
+        "src": "127:491:16",
+        "nodes": [
+          {
+            "id": 14963,
+            "nodeType": "FunctionDefinition",
+            "src": "495:121:16",
+            "nodes": [],
+            "documentation": {
+              "id": 14954,
+              "nodeType": "StructuredDocumentation",
+              "src": "168:322:16",
+              "text": "@notice              Triggered when creating a new pool for an Engine\n @param  delRisky     Amount of risky tokens required to initialize risky reserve\n @param  delStable    Amount of stable tokens required to initialize stable reserve\n @param  data         Calldata passed on create function call"
+            },
+            "functionSelector": "c171d27e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCallback",
+            "nameLocation": "504:14:16",
+            "parameters": {
+              "id": 14961,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14956,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "536:8:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14963,
+                  "src": "528:16:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14955,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14958,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "562:9:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14963,
+                  "src": "554:17:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14957,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14960,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "596:4:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14963,
+                  "src": "581:19:16",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 14959,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "581:5:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:88:16"
+            },
+            "returnParameters": {
+              "id": 14962,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "615:0:16"
+            },
+            "scope": 14964,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 14953,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:60:16",
+          "text": "@title  Primitive Create Callback\n @author Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          14964
+        ],
+        "name": "IPrimitiveCreateCallback",
+        "nameLocation": "137:24:16",
+        "scope": 14965,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 16
+}

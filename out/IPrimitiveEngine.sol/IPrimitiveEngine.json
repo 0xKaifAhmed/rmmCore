@@ -1,0 +1,2346 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "CalibrationError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DeltaInError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DeltaOutError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "GammaError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int128",
+          "name": "invariant",
+          "type": "int128"
+        },
+        {
+          "internalType": "int128",
+          "name": "nextInvariant",
+          "type": "int128"
+        }
+      ],
+      "name": "InvariantError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LockedError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "MinLiquidityError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolDuplicateError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolExpiredError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expected",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actual",
+          "type": "uint256"
+        }
+      ],
+      "name": "RiskyBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "RiskyPerLpError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "SigmaError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expected",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actual",
+          "type": "uint256"
+        }
+      ],
+      "name": "StableBalanceError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "StrikeError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UninitializedError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroDeltasError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroLiquidityError",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Allocate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Create",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "Remove",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "riskyForStable",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "deltaIn",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "deltaOut",
+          "type": "uint256"
+        }
+      ],
+      "name": "Swap",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "UpdateLastTimestamp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "BUFFER",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MIN_LIQUIDITY",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "fromMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "allocate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "calibrations",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "lastTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "strike",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "sigma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "maturity",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gamma",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "riskyPerLp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "create",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "factory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "invariantOf",
+      "outputs": [
+        {
+          "internalType": "int128",
+          "name": "invariant",
+          "type": "int128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "liquidity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "margins",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "balanceRisky",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "balanceStable",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "reserves",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "reserveRisky",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "reserveStable",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativeLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "risky",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scaleFactorRisky",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scaleFactorStable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stable",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "riskyForStable",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deltaIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deltaOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "fromMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "toMargin",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "swap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "updateLastTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "lastTimestamp",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "BUFFER()": "8fbc3ecd",
+    "MIN_LIQUIDITY()": "21b77d63",
+    "PRECISION()": "aaf5eb68",
+    "allocate(bytes32,address,uint256,uint256,bool,bytes)": "d2957b8f",
+    "calibrations(bytes32)": "23c5b952",
+    "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": "be00763a",
+    "deposit(address,uint256,uint256,bytes)": "9e48ff5a",
+    "factory()": "c45a0155",
+    "invariantOf(bytes32)": "546fecae",
+    "liquidity(address,bytes32)": "6b35bb6b",
+    "margins(address)": "38820465",
+    "remove(bytes32,uint256)": "9f8cfade",
+    "reserves(bytes32)": "00bbf1e4",
+    "risky()": "c08165d4",
+    "scaleFactorRisky()": "55ebb825",
+    "scaleFactorStable()": "4dd0d056",
+    "stable()": "22be3de1",
+    "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": "ca28fcd6",
+    "updateLastTimestamp(bytes32)": "11f99086",
+    "withdraw(address,uint256,uint256)": "b5c5f672"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"CalibrationError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DeltaInError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DeltaOutError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"GammaError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"int128\",\"name\":\"invariant\",\"type\":\"int128\"},{\"internalType\":\"int128\",\"name\":\"nextInvariant\",\"type\":\"int128\"}],\"name\":\"InvariantError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"LockedError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"MinLiquidityError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolDuplicateError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolExpiredError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"expected\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"actual\",\"type\":\"uint256\"}],\"name\":\"RiskyBalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"RiskyPerLpError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"SigmaError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"expected\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"actual\",\"type\":\"uint256\"}],\"name\":\"StableBalanceError\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"StrikeError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UninitializedError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ZeroDeltasError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ZeroLiquidityError\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Allocate\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"indexed\":true,\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Create\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"Remove\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"riskyForStable\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deltaIn\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deltaOut\",\"type\":\"uint256\"}],\"name\":\"Swap\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"UpdateLastTimestamp\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"BUFFER\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MIN_LIQUIDITY\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRECISION\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fromMargin\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"allocate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"calibrations\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"strike\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"sigma\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maturity\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"gamma\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"riskyPerLp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"create\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"invariantOf\",\"outputs\":[{\"internalType\":\"int128\",\"name\":\"invariant\",\"type\":\"int128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"liquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"margins\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"balanceRisky\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"balanceStable\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"delLiquidity\",\"type\":\"uint256\"}],\"name\":\"remove\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"reserves\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"reserveRisky\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"reserveStable\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"internalType\":\"uint32\",\"name\":\"blockTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeStable\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativeLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"risky\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scaleFactorRisky\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scaleFactorStable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stable\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"bool\",\"name\":\"riskyForStable\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deltaIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deltaOut\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fromMargin\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"toMargin\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"swap\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"updateLastTimestamp\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"lastTimestamp\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"errors\":{\"InvariantError(int128,int128)\":[{\"details\":\"Most important check as it verifies the validity of a desired swap\",\"params\":{\"invariant\":\"Pre-swap invariant updated with new tau\",\"nextInvariant\":\"Post-swap invariant after the swap amounts are applied to reserves\"}}],\"RiskyBalanceError(uint256,uint256)\":[{\"params\":{\"actual\":\"Actual risky balance\",\"expected\":\"Expected risky balance\"}}],\"StableBalanceError(uint256,uint256)\":[{\"params\":{\"actual\":\"Actual stable balance\",\"expected\":\"Expected stable balance\"}}]},\"kind\":\"dev\",\"methods\":{\"BUFFER()\":{\"returns\":{\"_0\":\"Amount of seconds after pool expiry which allows swaps, no swaps after buffer\"}},\"MIN_LIQUIDITY()\":{\"returns\":{\"_0\":\"Amount of liquidity burned on `create()` calls\"}},\"PRECISION()\":{\"returns\":{\"_0\":\"Precision units to scale to when doing token related calculations\"}},\"allocate(bytes32,address,uint256,uint256,bool,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the allocateCallback function\",\"delRisky\":\"Amount of risky tokens to add\",\"delStable\":\"Amount of stable tokens to add\",\"fromMargin\":\"Whether the `msg.sender` pays with their margin balance, or must send tokens\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address to give the allocated liquidity to\"},\"returns\":{\"delLiquidity\":\"Amount of liquidity given to `recipient`\"}},\"calibrations(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"gamma\":\"          Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)\",\"lastTimestamp\":\"  Last timestamp used to calculate time until expiry, aka \\\"tau\\\"\",\"maturity\":\"       Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\",\"sigma\":\"          AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\",\"strike\":\"         Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\"}},\"create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the createCallback function\",\"delLiquidity\":\"Amount of liquidity units to allocate to the curve, wei value with 18 decimals of precision\",\"gamma\":\"Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)\",\"maturity\":\"Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]\",\"riskyPerLp\":\"Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*\\u03c3^2/2))/\\u03c3\\u221a\\u03c4, valid for [0, 1e^(risky token decimals))\",\"sigma\":\"AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)\",\"strike\":\"Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]\"},\"returns\":{\"delRisky\":\"   Total amount of risky tokens provided to reserves\",\"delStable\":\"  Total amount of stable tokens provided to reserves\",\"poolId\":\"     Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"}},\"deposit(address,uint256,uint256,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the depositCallback function\",\"delRisky\":\"Amount of risky tokens to deposit\",\"delStable\":\"Amount of stable tokens to deposit\",\"recipient\":\"Recipient margin account of the deposited tokens\"}},\"invariantOf(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"invariant\":\"  Signed fixed point 64.64 number, invariant of `poolId`\"}},\"liquidity(address,bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"liquidity\":\"  Liquidity owned by `account` in `poolId`\"}},\"margins(address)\":{\"params\":{\"account\":\"Margin account to fetch\"},\"returns\":{\"balanceRisky\":\"   Balance of the risky token\",\"balanceStable\":\"  Balance of the stable token\"}},\"remove(bytes32,uint256)\":{\"params\":{\"delLiquidity\":\"Amount of liquidity to remove\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"delRisky\":\"     Amount of risky tokens received from removed liquidity\",\"delStable\":\"    Amount of stable tokens received from removed liquidity\"}},\"reserves(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of the engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"blockTimestamp\":\"      Timestamp when the cumulative reserve values were last updated\",\"cumulativeLiquidity\":\" Cumulative sum of total supply of liquidity of the previous update\",\"cumulativeRisky\":\"     Cumulative sum of risky token reserves of the previous update\",\"cumulativeStable\":\"    Cumulative sum of stable token reserves of the previous update\",\"liquidity\":\"           Total supply of liquidity for the curve\",\"reserveRisky\":\"        Risky token balance in the reserve\",\"reserveStable\":\"       Stable token balance in the reserve\"}},\"scaleFactorRisky()\":{\"returns\":{\"_0\":\"Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals)\"}},\"scaleFactorStable()\":{\"returns\":{\"_0\":\"Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals)\"}},\"stable()\":{\"returns\":{\"_0\":\"Stable token address, a more accurate name is the quote token\"}},\"swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)\":{\"params\":{\"data\":\"Arbitrary data that is passed to the swapCallback function\",\"deltaIn\":\"Amount of tokens to swap in\",\"deltaOut\":\"Amount of tokens to swap out\",\"fromMargin\":\"Whether the `msg.sender` uses their margin balance, or must send tokens\",\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\",\"recipient\":\"Address that receives output token `deltaOut` amount\",\"riskyForStable\":\"If true, swap risky to stable, else swap stable to risky\",\"toMargin\":\"Whether the `deltaOut` amount is transferred or deposited into margin\"}},\"updateLastTimestamp(bytes32)\":{\"params\":{\"poolId\":\"Keccak256 hash of engine address, strike, sigma, maturity, and gamma\"},\"returns\":{\"lastTimestamp\":\"Timestamp loaded into the state of the pool's Calibration.lastTimestamp\"}},\"withdraw(address,uint256,uint256)\":{\"params\":{\"delRisky\":\"Amount of risky tokens to withdraw\",\"delStable\":\"Amount of stable tokens to withdraw\",\"recipient\":\"Address that tokens are transferred to\"}}},\"title\":\"Primitive Engine Interface\",\"version\":1},\"userdoc\":{\"errors\":{\"BalanceError()\":[{\"notice\":\"Thrown when the balanceOf function is not successful and does not return data\"}],\"CalibrationError(uint256,uint256)\":[{\"notice\":\"Thrown when the parameters of a new pool are invalid, causing initial reserves to be 0\"}],\"DeltaInError()\":[{\"notice\":\"Thrown when the deltaIn parameter is 0\"}],\"DeltaOutError()\":[{\"notice\":\"Thrown when the deltaOut parameter is 0\"}],\"GammaError(uint256)\":[{\"notice\":\"Thrown when gamma, equal to 1 - fee %, is outside its bounds: 9_000 <= gamma <= 10_000; 1_000 = 10% fee\"}],\"InvariantError(int128,int128)\":[{\"notice\":\"Thrown when the invariant check fails\"}],\"LockedError()\":[{\"notice\":\"Thrown on attempted re-entrancy on a function with a re-entrancy guard\"}],\"MinLiquidityError(uint256)\":[{\"notice\":\"Thrown when liquidity is lower than or equal to the minimum amount of liquidity\"}],\"PoolDuplicateError()\":[{\"notice\":\"Thrown in create when a pool with computed poolId already exists\"}],\"PoolExpiredError()\":[{\"notice\":\"Thrown when calling an expired pool, where block.timestamp > maturity, + BUFFER if swap\"}],\"RiskyBalanceError(uint256,uint256)\":[{\"notice\":\"Thrown when the expected risky balance is less than the actual balance\"}],\"RiskyPerLpError(uint256)\":[{\"notice\":\"Thrown when riskyPerLp is outside the range of acceptable values, 0 < riskyPerLp <= 1eRiskyDecimals\"}],\"SigmaError(uint256)\":[{\"notice\":\"Thrown when sigma is outside the range of acceptable values, 1 <= sigma <= 1e7 with 4 precision\"}],\"StableBalanceError(uint256,uint256)\":[{\"notice\":\"Thrown when the expected stable balance is less than the actual balance\"}],\"StrikeError(uint256)\":[{\"notice\":\"Thrown when strike is not valid, i.e. equal to 0 or greater than 2^128\"}],\"UninitializedError()\":[{\"notice\":\"Thrown when the pool with poolId has not been created\"}],\"ZeroDeltasError()\":[{\"notice\":\"Thrown when the risky or stable amount is 0\"}],\"ZeroLiquidityError()\":[{\"notice\":\"Thrown when the liquidity parameter is 0\"}]},\"events\":{\"Allocate(address,address,bytes32,uint256,uint256,uint256)\":{\"notice\":\"Adds liquidity of risky and stable tokens to a specified `poolId`\"},\"Create(address,uint128,uint32,uint32,uint32,uint256,uint256,uint256)\":{\"notice\":\"Creates a pool with liquidity\"},\"Deposit(address,address,uint256,uint256)\":{\"notice\":\"Added stable and/or risky tokens to a margin account\"},\"Remove(address,bytes32,uint256,uint256,uint256)\":{\"notice\":\"Adds liquidity of risky and stable tokens to a specified `poolId`\"},\"Swap(address,address,bytes32,bool,uint256,uint256)\":{\"notice\":\"Swaps between `risky` and `stable` assets\"},\"UpdateLastTimestamp(bytes32)\":{\"notice\":\"Updates the time until expiry of the pool with `poolId`\"},\"Withdraw(address,address,uint256,uint256)\":{\"notice\":\"Removes stable and/or risky from a margin account\"}},\"kind\":\"user\",\"methods\":{\"allocate(bytes32,address,uint256,uint256,bool,bytes)\":{\"notice\":\"Allocates risky and stable tokens to a specific curve with `poolId`\"},\"calibrations(bytes32)\":{\"notice\":\"Fetches `Calibration` pool parameters\"},\"create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)\":{\"notice\":\"Initializes a curve with parameters in the `calibrations` storage mapping in the Engine\"},\"deposit(address,uint256,uint256,bytes)\":{\"notice\":\"Adds risky and/or stable tokens to a `recipient`'s internal balance account\"},\"invariantOf(bytes32)\":{\"notice\":\"Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`\"},\"liquidity(address,bytes32)\":{\"notice\":\"Fetches position liquidity an account address and poolId\"},\"margins(address)\":{\"notice\":\"Fetches the margin balances of `account`\"},\"remove(bytes32,uint256)\":{\"notice\":\"Unallocates risky and stable tokens from a specific curve with `poolId`\"},\"reserves(bytes32)\":{\"notice\":\"Fetches the global reserve state for a pool with `poolId`\"},\"swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)\":{\"notice\":\"Swaps between `risky` and `stable` tokens\"},\"updateLastTimestamp(bytes32)\":{\"notice\":\"Updates the time until expiry of the pool by setting its last timestamp value\"},\"withdraw(address,uint256,uint256)\":{\"notice\":\"Removes risky and/or stable tokens from a `msg.sender`'s internal balance account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IPrimitiveEngine.sol\":\"IPrimitiveEngine\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/IPrimitiveEngine.sol\":{\"keccak256\":\"0x9cc8c6aac249fc77128f5e08db6cfb3e0dc177e1aed7899071482ed09c01408a\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://2ba58232a71722a24c26c79cb905b826245883e95727e1051e15b57dc1a4dd9b\",\"dweb:/ipfs/QmYjsz2qkMTwkbdqRZVw8fN1q1vWDDxFazM43A8MmKa3fW\"]},\"contracts/interfaces/engine/IPrimitiveEngineActions.sol\":{\"keccak256\":\"0xa534fb3dae12b3ecfd9611c901b1a85c4a135fe4553facecb0d71505c797cb51\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://ff9b683f47b666070d714721cf1718e63df7c54d8197e1641fb4988c90c1ad3b\",\"dweb:/ipfs/QmT2wHLTMhGGBsHGo8wmg9U3gggfr5XzbUR92mFmH84vX1\"]},\"contracts/interfaces/engine/IPrimitiveEngineErrors.sol\":{\"keccak256\":\"0x86bbde924956e7901b893c6f5175f0020b2766a7a8f3defb376bc1ee956ea5b1\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://d9865859c64ab77b4f3031451221acc576e6b960f1633f70a782163639442caa\",\"dweb:/ipfs/QmYCQEBxx3FiGkVuXRuEcrr4sbC9UKuFwDNj84tyq2jKag\"]},\"contracts/interfaces/engine/IPrimitiveEngineEvents.sol\":{\"keccak256\":\"0x9c76cc12c8bb1703c33d77f1fa36808e4cb02108d932e7af5abeba2315c0831f\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://ff617561f5d14f3343e86fb363f03515c9d386ec13e60f09db3761a4d60a7225\",\"dweb:/ipfs/QmWi8XFiSBPgRbxvDf3135mcGFM8MWWJjEGC6pypQn6sWT\"]},\"contracts/interfaces/engine/IPrimitiveEngineView.sol\":{\"keccak256\":\"0xb1482c66ce10ddf51a64240e1888b0e1b86f2ef0d0ca56caa5d16b11ae39cf5c\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://9651c0db965e64e349342b46c0919b20d219cf9d50c1ffb8e6ef6b5f3498ca96\",\"dweb:/ipfs/QmdhWP4kfPs3KLBaEfx3VY44kvP5Jv3uexYx4jBzH8Ny1p\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "BalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "CalibrationError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DeltaInError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DeltaOutError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "GammaError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int128",
+              "name": "invariant",
+              "type": "int128"
+            },
+            {
+              "internalType": "int128",
+              "name": "nextInvariant",
+              "type": "int128"
+            }
+          ],
+          "type": "error",
+          "name": "InvariantError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "LockedError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "MinLiquidityError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolDuplicateError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolExpiredError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "expected",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actual",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "RiskyBalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "RiskyPerLpError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "SigmaError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "expected",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actual",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "StableBalanceError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "StrikeError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "UninitializedError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ZeroDeltasError"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ZeroLiquidityError"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Allocate",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128",
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32",
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Create",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Deposit",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Remove",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "bool",
+              "name": "riskyForStable",
+              "type": "bool",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaIn",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaOut",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Swap",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "UpdateLastTimestamp",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Withdraw",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "BUFFER",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "MIN_LIQUIDITY",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "PRECISION",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "allocate",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calibrations",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint128",
+              "name": "strike",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "sigma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "maturity",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "gamma",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "riskyPerLp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "create",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deposit"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "factory",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "invariantOf",
+          "outputs": [
+            {
+              "internalType": "int128",
+              "name": "invariant",
+              "type": "int128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "liquidity",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "liquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "margins",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "balanceRisky",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "balanceStable",
+              "type": "uint128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delLiquidity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "remove",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "reserves",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "reserveRisky",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "reserveStable",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "liquidity",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativeLiquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "risky",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "scaleFactorRisky",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "scaleFactorStable",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "stable",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bool",
+              "name": "riskyForStable",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deltaOut",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "toMargin",
+              "type": "bool"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "swap"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateLastTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "lastTimestamp",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "BUFFER()": {
+            "returns": {
+              "_0": "Amount of seconds after pool expiry which allows swaps, no swaps after buffer"
+            }
+          },
+          "MIN_LIQUIDITY()": {
+            "returns": {
+              "_0": "Amount of liquidity burned on `create()` calls"
+            }
+          },
+          "PRECISION()": {
+            "returns": {
+              "_0": "Precision units to scale to when doing token related calculations"
+            }
+          },
+          "allocate(bytes32,address,uint256,uint256,bool,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the allocateCallback function",
+              "delRisky": "Amount of risky tokens to add",
+              "delStable": "Amount of stable tokens to add",
+              "fromMargin": "Whether the `msg.sender` pays with their margin balance, or must send tokens",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma",
+              "recipient": "Address to give the allocated liquidity to"
+            },
+            "returns": {
+              "delLiquidity": "Amount of liquidity given to `recipient`"
+            }
+          },
+          "calibrations(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "gamma": "          Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)",
+              "lastTimestamp": "  Last timestamp used to calculate time until expiry, aka \"tau\"",
+              "maturity": "       Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]",
+              "sigma": "          AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)",
+              "strike": "         Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]"
+            }
+          },
+          "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the createCallback function",
+              "delLiquidity": "Amount of liquidity units to allocate to the curve, wei value with 18 decimals of precision",
+              "gamma": "Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000)",
+              "maturity": "Timestamp which starts the BUFFER countdown until swaps will cease, in seconds, valid for (block.timestamp, 2^32-1]",
+              "riskyPerLp": "Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*σ^2/2))/σ√τ, valid for [0, 1e^(risky token decimals))",
+              "sigma": "AKA Implied Volatility in basis points, determines the price impact of swaps, valid for (1, 10_000_000)",
+              "strike": "Marginal price of the pool's risky token at maturity, with the same decimals as the stable token, valid [0, 2^128-1]"
+            },
+            "returns": {
+              "delRisky": "   Total amount of risky tokens provided to reserves",
+              "delStable": "  Total amount of stable tokens provided to reserves",
+              "poolId": "     Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            }
+          },
+          "deposit(address,uint256,uint256,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the depositCallback function",
+              "delRisky": "Amount of risky tokens to deposit",
+              "delStable": "Amount of stable tokens to deposit",
+              "recipient": "Recipient margin account of the deposited tokens"
+            }
+          },
+          "invariantOf(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "invariant": "  Signed fixed point 64.64 number, invariant of `poolId`"
+            }
+          },
+          "liquidity(address,bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "liquidity": "  Liquidity owned by `account` in `poolId`"
+            }
+          },
+          "margins(address)": {
+            "params": {
+              "account": "Margin account to fetch"
+            },
+            "returns": {
+              "balanceRisky": "   Balance of the risky token",
+              "balanceStable": "  Balance of the stable token"
+            }
+          },
+          "remove(bytes32,uint256)": {
+            "params": {
+              "delLiquidity": "Amount of liquidity to remove",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "delRisky": "     Amount of risky tokens received from removed liquidity",
+              "delStable": "    Amount of stable tokens received from removed liquidity"
+            }
+          },
+          "reserves(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of the engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "blockTimestamp": "      Timestamp when the cumulative reserve values were last updated",
+              "cumulativeLiquidity": " Cumulative sum of total supply of liquidity of the previous update",
+              "cumulativeRisky": "     Cumulative sum of risky token reserves of the previous update",
+              "cumulativeStable": "    Cumulative sum of stable token reserves of the previous update",
+              "liquidity": "           Total supply of liquidity for the curve",
+              "reserveRisky": "        Risky token balance in the reserve",
+              "reserveStable": "       Stable token balance in the reserve"
+            }
+          },
+          "scaleFactorRisky()": {
+            "returns": {
+              "_0": "Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals)"
+            }
+          },
+          "scaleFactorStable()": {
+            "returns": {
+              "_0": "Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals)"
+            }
+          },
+          "stable()": {
+            "returns": {
+              "_0": "Stable token address, a more accurate name is the quote token"
+            }
+          },
+          "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": {
+            "params": {
+              "data": "Arbitrary data that is passed to the swapCallback function",
+              "deltaIn": "Amount of tokens to swap in",
+              "deltaOut": "Amount of tokens to swap out",
+              "fromMargin": "Whether the `msg.sender` uses their margin balance, or must send tokens",
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma",
+              "recipient": "Address that receives output token `deltaOut` amount",
+              "riskyForStable": "If true, swap risky to stable, else swap stable to risky",
+              "toMargin": "Whether the `deltaOut` amount is transferred or deposited into margin"
+            }
+          },
+          "updateLastTimestamp(bytes32)": {
+            "params": {
+              "poolId": "Keccak256 hash of engine address, strike, sigma, maturity, and gamma"
+            },
+            "returns": {
+              "lastTimestamp": "Timestamp loaded into the state of the pool's Calibration.lastTimestamp"
+            }
+          },
+          "withdraw(address,uint256,uint256)": {
+            "params": {
+              "delRisky": "Amount of risky tokens to withdraw",
+              "delStable": "Amount of stable tokens to withdraw",
+              "recipient": "Address that tokens are transferred to"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "allocate(bytes32,address,uint256,uint256,bool,bytes)": {
+            "notice": "Allocates risky and stable tokens to a specific curve with `poolId`"
+          },
+          "calibrations(bytes32)": {
+            "notice": "Fetches `Calibration` pool parameters"
+          },
+          "create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)": {
+            "notice": "Initializes a curve with parameters in the `calibrations` storage mapping in the Engine"
+          },
+          "deposit(address,uint256,uint256,bytes)": {
+            "notice": "Adds risky and/or stable tokens to a `recipient`'s internal balance account"
+          },
+          "invariantOf(bytes32)": {
+            "notice": "Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`"
+          },
+          "liquidity(address,bytes32)": {
+            "notice": "Fetches position liquidity an account address and poolId"
+          },
+          "margins(address)": {
+            "notice": "Fetches the margin balances of `account`"
+          },
+          "remove(bytes32,uint256)": {
+            "notice": "Unallocates risky and stable tokens from a specific curve with `poolId`"
+          },
+          "reserves(bytes32)": {
+            "notice": "Fetches the global reserve state for a pool with `poolId`"
+          },
+          "swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)": {
+            "notice": "Swaps between `risky` and `stable` tokens"
+          },
+          "updateLastTimestamp(bytes32)": {
+            "notice": "Updates the time until expiry of the pool by setting its last timestamp value"
+          },
+          "withdraw(address,uint256,uint256)": {
+            "notice": "Removes risky and/or stable tokens from a `msg.sender`'s internal balance account"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IPrimitiveEngine.sol": "IPrimitiveEngine"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IPrimitiveEngine.sol": {
+        "keccak256": "0x9cc8c6aac249fc77128f5e08db6cfb3e0dc177e1aed7899071482ed09c01408a",
+        "urls": [
+          "bzz-raw://2ba58232a71722a24c26c79cb905b826245883e95727e1051e15b57dc1a4dd9b",
+          "dweb:/ipfs/QmYjsz2qkMTwkbdqRZVw8fN1q1vWDDxFazM43A8MmKa3fW"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "contracts/interfaces/engine/IPrimitiveEngineActions.sol": {
+        "keccak256": "0xa534fb3dae12b3ecfd9611c901b1a85c4a135fe4553facecb0d71505c797cb51",
+        "urls": [
+          "bzz-raw://ff9b683f47b666070d714721cf1718e63df7c54d8197e1641fb4988c90c1ad3b",
+          "dweb:/ipfs/QmT2wHLTMhGGBsHGo8wmg9U3gggfr5XzbUR92mFmH84vX1"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "contracts/interfaces/engine/IPrimitiveEngineErrors.sol": {
+        "keccak256": "0x86bbde924956e7901b893c6f5175f0020b2766a7a8f3defb376bc1ee956ea5b1",
+        "urls": [
+          "bzz-raw://d9865859c64ab77b4f3031451221acc576e6b960f1633f70a782163639442caa",
+          "dweb:/ipfs/QmYCQEBxx3FiGkVuXRuEcrr4sbC9UKuFwDNj84tyq2jKag"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "contracts/interfaces/engine/IPrimitiveEngineEvents.sol": {
+        "keccak256": "0x9c76cc12c8bb1703c33d77f1fa36808e4cb02108d932e7af5abeba2315c0831f",
+        "urls": [
+          "bzz-raw://ff617561f5d14f3343e86fb363f03515c9d386ec13e60f09db3761a4d60a7225",
+          "dweb:/ipfs/QmWi8XFiSBPgRbxvDf3135mcGFM8MWWJjEGC6pypQn6sWT"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "contracts/interfaces/engine/IPrimitiveEngineView.sol": {
+        "keccak256": "0xb1482c66ce10ddf51a64240e1888b0e1b86f2ef0d0ca56caa5d16b11ae39cf5c",
+        "urls": [
+          "bzz-raw://9651c0db965e64e349342b46c0919b20d219cf9d50c1ffb8e6ef6b5f3498ca96",
+          "dweb:/ipfs/QmdhWP4kfPs3KLBaEfx3VY44kvP5Jv3uexYx4jBzH8Ny1p"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IPrimitiveEngine.sol",
+    "id": 14888,
+    "exportedSymbols": {
+      "IPrimitiveEngine": [
+        14887
+      ],
+      "IPrimitiveEngineActions": [
+        15114
+      ],
+      "IPrimitiveEngineErrors": [
+        15198
+      ],
+      "IPrimitiveEngineEvents": [
+        15291
+      ],
+      "IPrimitiveEngineView": [
+        15405
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:393:14",
+    "nodes": [
+      {
+        "id": 14873,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:14",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 14874,
+        "nodeType": "ImportDirective",
+        "src": "67:46:14",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineActions.sol",
+        "file": "./engine/IPrimitiveEngineActions.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 14888,
+        "sourceUnit": 15115,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 14875,
+        "nodeType": "ImportDirective",
+        "src": "114:45:14",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineEvents.sol",
+        "file": "./engine/IPrimitiveEngineEvents.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 14888,
+        "sourceUnit": 15292,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 14876,
+        "nodeType": "ImportDirective",
+        "src": "160:43:14",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineView.sol",
+        "file": "./engine/IPrimitiveEngineView.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 14888,
+        "sourceUnit": 15406,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 14877,
+        "nodeType": "ImportDirective",
+        "src": "204:45:14",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/engine/IPrimitiveEngineErrors.sol",
+        "file": "./engine/IPrimitiveEngineErrors.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 14888,
+        "sourceUnit": 15199,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 14887,
+        "nodeType": "ContractDefinition",
+        "src": "289:144:14",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 14879,
+              "name": "IPrimitiveEngineActions",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 15114,
+              "src": "323:23:14"
+            },
+            "id": 14880,
+            "nodeType": "InheritanceSpecifier",
+            "src": "323:23:14"
+          },
+          {
+            "baseName": {
+              "id": 14881,
+              "name": "IPrimitiveEngineEvents",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 15291,
+              "src": "352:22:14"
+            },
+            "id": 14882,
+            "nodeType": "InheritanceSpecifier",
+            "src": "352:22:14"
+          },
+          {
+            "baseName": {
+              "id": 14883,
+              "name": "IPrimitiveEngineView",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 15405,
+              "src": "380:20:14"
+            },
+            "id": 14884,
+            "nodeType": "InheritanceSpecifier",
+            "src": "380:20:14"
+          },
+          {
+            "baseName": {
+              "id": 14885,
+              "name": "IPrimitiveEngineErrors",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 15198,
+              "src": "406:22:14"
+            },
+            "id": 14886,
+            "nodeType": "InheritanceSpecifier",
+            "src": "406:22:14"
+          }
+        ],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 14878,
+          "nodeType": "StructuredDocumentation",
+          "src": "251:38:14",
+          "text": "@title Primitive Engine Interface"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          14887,
+          15198,
+          15405,
+          15291,
+          15114
+        ],
+        "name": "IPrimitiveEngine",
+        "nameLocation": "299:16:14",
+        "scope": 14888,
+        "usedErrors": [
+          15120,
+          15123,
+          15126,
+          15129,
+          15134,
+          15139,
+          15144,
+          15149,
+          15154,
+          15161,
+          15168,
+          15175,
+          15178,
+          15181,
+          15184,
+          15187,
+          15190,
+          15197
+        ]
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 14
+}

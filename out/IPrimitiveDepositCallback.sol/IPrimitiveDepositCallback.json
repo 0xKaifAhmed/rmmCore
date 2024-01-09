@@ -1,0 +1,291 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "delRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "delStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "depositCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "depositCallback(uint256,uint256,bytes)": "c536e605"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"delRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"delStable\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"depositCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"kind\":\"dev\",\"methods\":{\"depositCallback(uint256,uint256,bytes)\":{\"params\":{\"data\":\"Calldata passed on deposit function call\",\"delRisky\":\"Amount of risky tokens required to deposit to risky margin balance\",\"delStable\":\"Amount of stable tokens required to deposit to stable margin balance\"}}},\"title\":\"Primitive Deposit Callback\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"depositCallback(uint256,uint256,bytes)\":{\"notice\":\"Triggered when depositing tokens to an Engine\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/callback/IPrimitiveDepositCallback.sol\":\"IPrimitiveDepositCallback\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/callback/IPrimitiveDepositCallback.sol\":{\"keccak256\":\"0x2989c446863ccd94e254ccc14a1a57f672d637291da197aab8e43536168cf773\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://22a1480de8d7869632d24341502264dbc4683b94a2c78e832f802d2e269a6c19\",\"dweb:/ipfs/QmSo6aWGBGGB51YCtcQtYsuiLUfNPGEQ8uxzNZusmGUQyy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "delRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "depositCallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "depositCallback(uint256,uint256,bytes)": {
+            "params": {
+              "data": "Calldata passed on deposit function call",
+              "delRisky": "Amount of risky tokens required to deposit to risky margin balance",
+              "delStable": "Amount of stable tokens required to deposit to stable margin balance"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "depositCallback(uint256,uint256,bytes)": {
+            "notice": "Triggered when depositing tokens to an Engine"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/callback/IPrimitiveDepositCallback.sol": "IPrimitiveDepositCallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/callback/IPrimitiveDepositCallback.sol": {
+        "keccak256": "0x2989c446863ccd94e254ccc14a1a57f672d637291da197aab8e43536168cf773",
+        "urls": [
+          "bzz-raw://22a1480de8d7869632d24341502264dbc4683b94a2c78e832f802d2e269a6c19",
+          "dweb:/ipfs/QmSo6aWGBGGB51YCtcQtYsuiLUfNPGEQ8uxzNZusmGUQyy"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/callback/IPrimitiveDepositCallback.sol",
+    "id": 14979,
+    "exportedSymbols": {
+      "IPrimitiveDepositCallback": [
+        14978
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:593:17",
+    "nodes": [
+      {
+        "id": 14966,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:17",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 14978,
+        "nodeType": "ContractDefinition",
+        "src": "128:505:17",
+        "nodes": [
+          {
+            "id": 14977,
+            "nodeType": "FunctionDefinition",
+            "src": "509:122:17",
+            "nodes": [],
+            "documentation": {
+              "id": 14968,
+              "nodeType": "StructuredDocumentation",
+              "src": "170:334:17",
+              "text": "@notice              Triggered when depositing tokens to an Engine\n @param  delRisky     Amount of risky tokens required to deposit to risky margin balance\n @param  delStable    Amount of stable tokens required to deposit to stable margin balance\n @param  data         Calldata passed on deposit function call"
+            },
+            "functionSelector": "c536e605",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositCallback",
+            "nameLocation": "518:15:17",
+            "parameters": {
+              "id": 14975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14970,
+                  "mutability": "mutable",
+                  "name": "delRisky",
+                  "nameLocation": "551:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14977,
+                  "src": "543:16:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14969,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14972,
+                  "mutability": "mutable",
+                  "name": "delStable",
+                  "nameLocation": "577:9:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14977,
+                  "src": "569:17:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14971,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14974,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "611:4:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14977,
+                  "src": "596:19:17",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 14973,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "596:5:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "533:88:17"
+            },
+            "returnParameters": {
+              "id": 14976,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:0:17"
+            },
+            "scope": 14978,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 14967,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:61:17",
+          "text": "@title  Primitive Deposit Callback\n @author Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          14978
+        ],
+        "name": "IPrimitiveDepositCallback",
+        "nameLocation": "138:25:17",
+        "scope": 14979,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 17
+}

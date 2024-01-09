@@ -1,0 +1,1161 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "risky",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "stable",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "engine",
+          "type": "address"
+        }
+      ],
+      "name": "DeployEngine",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MIN_LIQUIDITY_FACTOR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "args",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "factory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "risky",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stable",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "scaleFactorRisky",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "scaleFactorStable",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "risky",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stable",
+          "type": "address"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "engine",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deployer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "risky",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stable",
+          "type": "address"
+        }
+      ],
+      "name": "getEngine",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "engine",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "MIN_LIQUIDITY_FACTOR()": "45d9b663",
+    "args()": "4e9b75b6",
+    "deploy(address,address)": "545e7c61",
+    "deployer()": "d5f39488",
+    "getEngine(address,address)": "62f7f918"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"risky\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"stable\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"engine\",\"type\":\"address\"}],\"name\":\"DeployEngine\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MIN_LIQUIDITY_FACTOR\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"args\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"risky\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"stable\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"scaleFactorRisky\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"scaleFactorStable\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"minLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"risky\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"stable\",\"type\":\"address\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"engine\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deployer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"risky\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"stable\",\"type\":\"address\"}],\"name\":\"getEngine\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"engine\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Primitive\",\"events\":{\"DeployEngine(address,address,address,address)\":{\"params\":{\"engine\":\"Deployed engine address\",\"from\":\"Calling `msg.sender` of deploy\",\"risky\":\"Risky token of Engine to deploy\",\"stable\":\"Stable token of Engine to deploy\"}}},\"kind\":\"dev\",\"methods\":{\"MIN_LIQUIDITY_FACTOR()\":{\"details\":\"E.g. if the lowest decimal token is 6, min liquidity w/ 18 decimals                 cannot be 1000 wei, therefore the token decimals                 divided by the min liquidity factor is the amount of minimum liquidity                 MIN_LIQUIDITY = 10 ^ (Decimals / MIN_LIQUIDITY_FACTOR)\"},\"args()\":{\"returns\":{\"factory\":\"           Smart contract deploying the Engine contract\",\"minLiquidity\":\"      Minimum amount of liquidity on pool creation\",\"risky\":\"             Risky token\",\"scaleFactorRisky\":\"  Scale factor of the risky token, 10^(18 - riskyTokenDecimals)\",\"scaleFactorStable\":\" Scale factor of the stable token, 10^(18 - stableTokenDecimals)\",\"stable\":\"            Stable token\"}},\"deploy(address,address)\":{\"params\":{\"risky\":\"Risky token, the underlying token\",\"stable\":\"Stable token, the quote token\"}},\"deployer()\":{\"returns\":{\"_0\":\"Deployer of this factory contract\"}},\"getEngine(address,address)\":{\"params\":{\"risky\":\"Risky token, the underlying token\",\"stable\":\"Stable token, the quote token\"},\"returns\":{\"engine\":\" Engine address for a risky and stable token\"}}},\"title\":\"Primitive Factory Interface\",\"version\":1},\"userdoc\":{\"events\":{\"DeployEngine(address,address,address,address)\":{\"notice\":\"Created a new engine contract!\"}},\"kind\":\"user\",\"methods\":{\"MIN_LIQUIDITY_FACTOR()\":{\"notice\":\"Used to scale the minimum amount of liquidity to lowest precision\"},\"args()\":{\"notice\":\"Called within Engine constructor so Engine can set immutable                            variables without constructor args\"},\"deploy(address,address)\":{\"notice\":\"Deploys a new Engine contract and sets the `getEngine` mapping for the tokens\"},\"deployer()\":{\"notice\":\"Deployer does not have any access controls to wield\"},\"getEngine(address,address)\":{\"notice\":\"Fetches engine address of a token pair which has been deployed from this factory\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IPrimitiveFactory.sol\":\"IPrimitiveFactory\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/interfaces/IPrimitiveFactory.sol\":{\"keccak256\":\"0x592ff2be55e3c6f4af4ae1bb83dd251f925e275422720e8e7f1a82a4d7cf1272\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://eb94aa54cb726e85b726a4201f5c2255e402132cfd7d9fe90f3d191fa9aa8f98\",\"dweb:/ipfs/QmQsZoxSdjEiKcRJeQvgEV9uPcr7jpuQCizsfM2QSwyNG9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.6+commit.11564f7e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "risky",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "stable",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "engine",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "DeployEngine",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "MIN_LIQUIDITY_FACTOR",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "args",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "factory",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "risky",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "stable",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "scaleFactorRisky",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "scaleFactorStable",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minLiquidity",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "risky",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "stable",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deploy",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "engine",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "deployer",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "risky",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "stable",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEngine",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "engine",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "MIN_LIQUIDITY_FACTOR()": {
+            "details": "E.g. if the lowest decimal token is 6, min liquidity w/ 18 decimals                 cannot be 1000 wei, therefore the token decimals                 divided by the min liquidity factor is the amount of minimum liquidity                 MIN_LIQUIDITY = 10 ^ (Decimals / MIN_LIQUIDITY_FACTOR)"
+          },
+          "args()": {
+            "returns": {
+              "factory": "           Smart contract deploying the Engine contract",
+              "minLiquidity": "      Minimum amount of liquidity on pool creation",
+              "risky": "             Risky token",
+              "scaleFactorRisky": "  Scale factor of the risky token, 10^(18 - riskyTokenDecimals)",
+              "scaleFactorStable": " Scale factor of the stable token, 10^(18 - stableTokenDecimals)",
+              "stable": "            Stable token"
+            }
+          },
+          "deploy(address,address)": {
+            "params": {
+              "risky": "Risky token, the underlying token",
+              "stable": "Stable token, the quote token"
+            }
+          },
+          "deployer()": {
+            "returns": {
+              "_0": "Deployer of this factory contract"
+            }
+          },
+          "getEngine(address,address)": {
+            "params": {
+              "risky": "Risky token, the underlying token",
+              "stable": "Stable token, the quote token"
+            },
+            "returns": {
+              "engine": " Engine address for a risky and stable token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "MIN_LIQUIDITY_FACTOR()": {
+            "notice": "Used to scale the minimum amount of liquidity to lowest precision"
+          },
+          "args()": {
+            "notice": "Called within Engine constructor so Engine can set immutable                            variables without constructor args"
+          },
+          "deploy(address,address)": {
+            "notice": "Deploys a new Engine contract and sets the `getEngine` mapping for the tokens"
+          },
+          "deployer()": {
+            "notice": "Deployer does not have any access controls to wield"
+          },
+          "getEngine(address,address)": {
+            "notice": "Fetches engine address of a token pair which has been deployed from this factory"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IPrimitiveFactory.sol": "IPrimitiveFactory"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IPrimitiveFactory.sol": {
+        "keccak256": "0x592ff2be55e3c6f4af4ae1bb83dd251f925e275422720e8e7f1a82a4d7cf1272",
+        "urls": [
+          "bzz-raw://eb94aa54cb726e85b726a4201f5c2255e402132cfd7d9fe90f3d191fa9aa8f98",
+          "dweb:/ipfs/QmQsZoxSdjEiKcRJeQvgEV9uPcr7jpuQCizsfM2QSwyNG9"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IPrimitiveFactory.sol",
+    "id": 14951,
+    "exportedSymbols": {
+      "IPrimitiveFactory": [
+        14950
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:2790:15",
+    "nodes": [
+      {
+        "id": 14889,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:15",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 14950,
+        "nodeType": "ContractDefinition",
+        "src": "131:2699:15",
+        "nodes": [
+          {
+            "id": 14901,
+            "nodeType": "EventDefinition",
+            "src": "436:104:15",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 14891,
+              "nodeType": "StructuredDocumentation",
+              "src": "165:266:15",
+              "text": "@notice         Created a new engine contract!\n @param  from    Calling `msg.sender` of deploy\n @param  risky   Risky token of Engine to deploy\n @param  stable  Stable token of Engine to deploy\n @param  engine  Deployed engine address"
+            },
+            "name": "DeployEngine",
+            "nameLocation": "442:12:15",
+            "parameters": {
+              "id": 14900,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14893,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "471:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14901,
+                  "src": "455:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14892,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14895,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "risky",
+                  "nameLocation": "493:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14901,
+                  "src": "477:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14894,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "477:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14897,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "stable",
+                  "nameLocation": "516:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14901,
+                  "src": "500:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14896,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "500:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14899,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "engine",
+                  "nameLocation": "532:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14901,
+                  "src": "524:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14898,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "524:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "454:85:15"
+            }
+          },
+          {
+            "id": 14911,
+            "nodeType": "FunctionDefinition",
+            "src": "760:81:15",
+            "nodes": [],
+            "documentation": {
+              "id": 14902,
+              "nodeType": "StructuredDocumentation",
+              "src": "546:209:15",
+              "text": "@notice         Deploys a new Engine contract and sets the `getEngine` mapping for the tokens\n @param  risky   Risky token, the underlying token\n @param  stable  Stable token, the quote token"
+            },
+            "functionSelector": "545e7c61",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nameLocation": "769:6:15",
+            "parameters": {
+              "id": 14907,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14904,
+                  "mutability": "mutable",
+                  "name": "risky",
+                  "nameLocation": "784:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14911,
+                  "src": "776:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14903,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "776:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14906,
+                  "mutability": "mutable",
+                  "name": "stable",
+                  "nameLocation": "799:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14911,
+                  "src": "791:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14905,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "791:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "775:31:15"
+            },
+            "returnParameters": {
+              "id": 14910,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14909,
+                  "mutability": "mutable",
+                  "name": "engine",
+                  "nameLocation": "833:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14911,
+                  "src": "825:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14908,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "825:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "824:16:15"
+            },
+            "scope": 14950,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14917,
+            "nodeType": "FunctionDefinition",
+            "src": "1301:64:15",
+            "nodes": [],
+            "documentation": {
+              "id": 14912,
+              "nodeType": "StructuredDocumentation",
+              "src": "872:424:15",
+              "text": "@notice         Used to scale the minimum amount of liquidity to lowest precision\n @dev            E.g. if the lowest decimal token is 6, min liquidity w/ 18 decimals\n                 cannot be 1000 wei, therefore the token decimals\n                 divided by the min liquidity factor is the amount of minimum liquidity\n                 MIN_LIQUIDITY = 10 ^ (Decimals / MIN_LIQUIDITY_FACTOR)"
+            },
+            "functionSelector": "45d9b663",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "MIN_LIQUIDITY_FACTOR",
+            "nameLocation": "1310:20:15",
+            "parameters": {
+              "id": 14913,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1330:2:15"
+            },
+            "returnParameters": {
+              "id": 14916,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14915,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14917,
+                  "src": "1356:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14914,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1356:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1355:9:15"
+            },
+            "scope": 14950,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14933,
+            "nodeType": "FunctionDefinition",
+            "src": "1988:268:15",
+            "nodes": [],
+            "documentation": {
+              "id": 14918,
+              "nodeType": "StructuredDocumentation",
+              "src": "1371:612:15",
+              "text": "@notice                    Called within Engine constructor so Engine can set immutable\n                            variables without constructor args\n @return factory            Smart contract deploying the Engine contract\n @return risky              Risky token\n @return stable             Stable token\n @return scaleFactorRisky   Scale factor of the risky token, 10^(18 - riskyTokenDecimals)\n @return scaleFactorStable  Scale factor of the stable token, 10^(18 - stableTokenDecimals)\n @return minLiquidity       Minimum amount of liquidity on pool creation"
+            },
+            "functionSelector": "4e9b75b6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "args",
+            "nameLocation": "1997:4:15",
+            "parameters": {
+              "id": 14919,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2001:2:15"
+            },
+            "returnParameters": {
+              "id": 14932,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14921,
+                  "mutability": "mutable",
+                  "name": "factory",
+                  "nameLocation": "2072:7:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2064:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14920,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2064:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14923,
+                  "mutability": "mutable",
+                  "name": "risky",
+                  "nameLocation": "2101:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2093:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14922,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2093:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14925,
+                  "mutability": "mutable",
+                  "name": "stable",
+                  "nameLocation": "2128:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2120:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14924,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2120:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14927,
+                  "mutability": "mutable",
+                  "name": "scaleFactorRisky",
+                  "nameLocation": "2156:16:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2148:24:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14926,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2148:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14929,
+                  "mutability": "mutable",
+                  "name": "scaleFactorStable",
+                  "nameLocation": "2194:17:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2186:25:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14928,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2186:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14931,
+                  "mutability": "mutable",
+                  "name": "minLiquidity",
+                  "nameLocation": "2233:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14933,
+                  "src": "2225:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14930,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2225:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2050:205:15"
+            },
+            "scope": 14950,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14943,
+            "nodeType": "FunctionDefinition",
+            "src": "2547:89:15",
+            "nodes": [],
+            "documentation": {
+              "id": 14934,
+              "nodeType": "StructuredDocumentation",
+              "src": "2262:280:15",
+              "text": "@notice         Fetches engine address of a token pair which has been deployed from this factory\n @param risky    Risky token, the underlying token\n @param stable   Stable token, the quote token\n @return engine  Engine address for a risky and stable token"
+            },
+            "functionSelector": "62f7f918",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEngine",
+            "nameLocation": "2556:9:15",
+            "parameters": {
+              "id": 14939,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14936,
+                  "mutability": "mutable",
+                  "name": "risky",
+                  "nameLocation": "2574:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14943,
+                  "src": "2566:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14935,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2566:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14938,
+                  "mutability": "mutable",
+                  "name": "stable",
+                  "nameLocation": "2589:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14943,
+                  "src": "2581:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14937,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2581:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2565:31:15"
+            },
+            "returnParameters": {
+              "id": 14942,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14941,
+                  "mutability": "mutable",
+                  "name": "engine",
+                  "nameLocation": "2628:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14943,
+                  "src": "2620:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14940,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2620:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2619:16:15"
+            },
+            "scope": 14950,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14949,
+            "nodeType": "FunctionDefinition",
+            "src": "2776:52:15",
+            "nodes": [],
+            "documentation": {
+              "id": 14944,
+              "nodeType": "StructuredDocumentation",
+              "src": "2642:129:15",
+              "text": "@notice         Deployer does not have any access controls to wield\n @return         Deployer of this factory contract"
+            },
+            "functionSelector": "d5f39488",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deployer",
+            "nameLocation": "2785:8:15",
+            "parameters": {
+              "id": 14945,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2793:2:15"
+            },
+            "returnParameters": {
+              "id": 14948,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14947,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14949,
+                  "src": "2819:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 14946,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2819:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2818:9:15"
+            },
+            "scope": 14950,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 14890,
+          "nodeType": "StructuredDocumentation",
+          "src": "67:64:15",
+          "text": "@title   Primitive Factory Interface\n @author  Primitive"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          14950
+        ],
+        "name": "IPrimitiveFactory",
+        "nameLocation": "141:17:15",
+        "scope": 14951,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 15
+}
