@@ -27,6 +27,15 @@ $ forge build
 $ forge test
 ```
 
+### Echidna
+
+-   **Command**: Maintain the sequence of flags otherwise command won'n work.
+-   **Note**: All the fuzz files are designed to call individually so echidna .  won't work.
+
+```shell
+$ echidna ./path --config config.yaml --contract contract.sol --test-mode testMode --worker N
+```
+
 ### Format
 
 ```shell
